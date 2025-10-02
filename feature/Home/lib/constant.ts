@@ -1,0 +1,168 @@
+import MobileApplication from "../../../public/assets/mobile-app.webp";
+import WebDevelopment from "../../../public/assets/web-development.webp";
+import AIDevelopment from "../../../public/assets/ai-development.webp";
+// Portfolio
+import AMJ from "../../../public/assets/portfolio/portfolio.webp";
+import TruthGpt from "../../../public/assets/portfolio/portfolio-2.webp";
+import FSK from "../../../public/assets/portfolio/portfolio-3.webp";
+import { TPortfolio } from "../types";
+
+export const ACHIEVEMENT = [
+  {
+    id: 1,
+    item: "Number of downloads",
+    numbers: "5M",
+  },
+  {
+    id: 2,
+    item: "Ratings of apps",
+    numbers: "4.8",
+  },
+  {
+    id: 3,
+    item: "Number of exist",
+    numbers: "25",
+  },
+];
+
+export const SERVICES = [
+  {
+    id: 1,
+    title: "Mobile App Development",
+    description:
+      "We design and develop high-performance mobile applications with seamless user experiences, robust security, and scalable architectures, tailored to meet user and business expansion needs.",
+    img: MobileApplication,
+  },
+  {
+    id: 2,
+    title: "Web Development",
+    description:
+      "Our web development services deliver responsive, high-speed websites with secure, scalable back-end solutions, optimized for both user engagement and operational efficiency.",
+    img: WebDevelopment,
+  },
+  {
+    id: 3,
+    title: "AI Development",
+    description:
+      "We create custom software solutions that enhance business processes, featuring advanced integrations, strong security measures, and scalable designs to support your growth.",
+    img: AIDevelopment,
+  },
+];
+
+export const EXPERTISE = [
+  {
+    id: 1,
+    title: "Automotive",
+    description:
+      "Implement IoT telematics and AI-driven predictive maintenance to optimize fleet management. Gain real-time data for enhanced vehicle performance and reduced downtime. Improve safety and efficiency with advanced analytics.",
+    img: MobileApplication,
+  },
+  {
+    id: 2,
+    title: "HealthCare",
+    description:
+      "Utilize HIPAA-compliant telemedicine platforms and integrated EMR/EHR systems for streamlined patient care. Employ AI diagnostics for better outcomes and predictive analytics to enhance operational efficiency.",
+    img: WebDevelopment,
+  },
+  {
+    id: 3,
+    title: "On-Demand",
+    description:
+      "Adopt scalable cloud architectures with real-time GPS tracking and AI-driven demand forecasting. Ensure rapid, reliable service delivery and seamless user experiences. Scale effortlessly with fluctuating demands.",
+    img: WebDevelopment,
+  },
+  {
+    id: 4,
+    title: "Education",
+    description:
+      "Leverage VR-enabled learning platforms and AI-driven personalized paths to enhance student engagement. Utilize real-time analytics for adaptive content and improved teaching strategies.",
+    img: MobileApplication,
+  },
+  {
+    id: 5,
+    title: "Music",
+    description:
+      "Deploy advanced streaming platforms with AI-driven recommendations and blockchain-based royalty management. Maximize revenue, enhance user engagement, and ensure secure transactions.",
+    img: WebDevelopment,
+  },
+  {
+    id: 6,
+    title: "Fintech",
+    description:
+      "Implement blockchain smart contracts, AI-driven fraud detection, and real-time payment processing for secure transactions. Use data analytics for personalized financial solutions and enhanced security.",
+    img: MobileApplication,
+  },
+  {
+    id: 7,
+    title: "Logistic",
+    description:
+      "Optimize operations with AI-driven route planning, IoT tracking, and advanced supply chain analytics. Improve delivery times, reduce costs, and gain real-time visibility and predictive insights.",
+    img: WebDevelopment,
+  },
+  {
+    id: 8,
+    title: "Retail",
+    description:
+      "Integrate AI-powered inventory management and personalized recommendations with omnichannel sales. Drive customer loyalty, optimize stock levels, and increase sales through data-driven insights.",
+    img: MobileApplication,
+  },
+  {
+    id: 9,
+    title: "E-Commerce",
+    description:
+      "Enhance platforms with scalable cloud infrastructure, secure payment gateways, and AI-driven customer behavior analytics. Boost conversions, improve user experience, and drive sustained growth.",
+    img: WebDevelopment,
+  },
+  {
+    id: 10,
+    title: "Real-Estate",
+    description:
+      "Modernize with VR property tours, AI-driven valuations, and blockchain smart contracts. Streamline transactions, enhance property visibility, and provide data-driven insights for better decisions.",
+    img: MobileApplication,
+  },
+];
+
+export const PORTFOLIOS: TPortfolio[] = [
+  {
+    title: "AMJ Workplace Wellness",
+    tags: ["Game Design", "Mobile App Development"],
+    description:
+      "AMJ Workplace Wellness is a holistic wellness app designed to promote employee health and fitness in the corporate environment.",
+    features: [
+      "Seamless UI/UX Design for Corporate Use",
+      "Integration with Wearable Devices",
+      "Real-time Health Tracking and Analysis",
+      "80% Increase in Employee Satisfaction",
+      "AI-driven Personalized Recommendations",
+    ],
+    slug: "amj-wellness",
+    img: AMJ,
+  },
+  {
+    title: "Truth GPT",
+    tags: ["UI/UX Design", "Mobile App Development"],
+    description:
+      "AI-powered mobile application designed for transparent, accessible information through a chatbot interface. Developed to enhance interaction realism with advanced Flutter animations, engaging 3D models, and prompt contextual engineering for quick, helpful responses.",
+    features: [
+      "40% More Interactions with Flutter Animations",
+      "3X Engagement via 3D Features",
+      "Quality Responses with Semantic Search",
+    ],
+    slug: "truth-gpt",
+    img: TruthGpt,
+  },
+  {
+    title: "Find Serve & Keep",
+    tags: ["Game Design", "Mobile App Development"],
+    description:
+      "FSK revolutionizes mobile gaming with its innovative fusion of match-3 puzzles, time management challenges, and captivating role-playing elements.",
+    features: [
+      "Immersive Role-Playing Narrative",
+      "Real-Time Market Strategies",
+      "Monetization Without Disruption",
+      "Engaging User Experience",
+    ],
+    slug: "fsk",
+    img: FSK,
+  },
+];
