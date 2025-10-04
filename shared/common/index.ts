@@ -6,3 +6,7 @@ export * from "./Carousel";
 export * from "./Button";
 export * from "./Logo";
 export * from "./Card";
+export * from "./Form";
+export * from "./Input";
+export * from "./Textarea";
+export * from "./Label";

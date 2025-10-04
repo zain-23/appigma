@@ -19,8 +19,8 @@ export const Navbar = () => {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
         scrolled
-          ? "bg-background/70 backdrop-blur-md shadow-md"
-          : "bg-transparent text-background"
+          ? "bg-background/30 backdrop-blur-md shadow-md"
+          : "bg-transparent"
       )}
     >
       <Container>
@@ -42,7 +42,7 @@ export const Navbar = () => {
                       key={item.id}
                       href={item.path}
                       className={buttonVariants({
-                        className: "h-14 !rounded-full px-8",
+                        className: "h-14 !rounded-full px-8 !text-lg",
                       })}
                     >
                       {item.item}
@@ -53,7 +53,7 @@ export const Navbar = () => {
                   <Link
                     key={item.id}
                     href={item.path}
-                    className="px-3 py-2 font-medium"
+                    className="px-3 py-2 text-lg hover:text-primary transition-all duration-300 hover:font-semibold hover:tracking-widest"
                   >
                     {item.item}
                   </Link>

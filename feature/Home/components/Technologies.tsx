@@ -40,11 +40,12 @@ export const Technologies = () => {
           </div>
           <div className="col-span-6 border-t p-10 space-y-10">
             {Object.keys(tecnologiesStack).map((tech) => (
-              <div className="space-y-4">
+              <div className="space-y-4" key={tech}>
                 <h4 className="text-3xl font-medium">{tech}</h4>
                 <div className="grid grid-cols-3 gap-6">
                   {tecnologiesStack[tech].map((item) => (
                     <Button
+                      key={item}
                       variant={"outline"}
                       className="h-14 rounded-full text-lg"
                     >
