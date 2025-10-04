@@ -21,7 +21,7 @@ export const WatermarkContent: FC<DualTextProps> = ({
       </h2>
 
       {/* Main heading text */}
-      <h2 className="absolute top-6 left-2 z-10 text-3xl md:text-4xl lg:text-5xl font-black text-gray-800 leading-tight">
+      <h2 className="absolute top-6 left-2 z-10 text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
         {frontText}
       </h2>
     </div>

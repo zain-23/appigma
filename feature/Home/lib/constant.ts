@@ -422,3 +422,75 @@ export const FOOTER_SOCIAL_MEDIA = [
   { name: "YouTube", icon: Youtube },
   { name: "LinkedIn", icon: Linkedin },
 ];
+
+// Technologies
+export const TECHNOLOGIES = {
+  "Mobile Apps": {
+    iOS: [
+      "Swift",
+      "UI Kit",
+      "RxSwift",
+      "Combine",
+      "MVVM",
+      "Alomofire",
+      "Core Data",
+    ],
+    Android: ["Kotlin", "MVVM", "RxJava", "Java", "Retrofit", "Jetpack"],
+  },
+  "Web Platforms": {
+    Frontend: [
+      "React js",
+      "Next js",
+      "Angular",
+      "Vue",
+      "Typescript",
+      "Html5",
+      "CSS",
+      "Javascript",
+      "GraphQL",
+      "Apollo",
+      "MaterialUI",
+      "Rest API",
+    ],
+    Backend: [
+      "Node js",
+      "Python",
+      "Scala",
+      "Php",
+      "Java",
+      "Spring",
+      ".Net",
+      "Laravel",
+    ],
+    CMS: ["Wordpress", "Magento", "Shopify", "Contentful"],
+  },
+  "Cross Platforms": {
+    React: ["Redux", "Mobx", "RxJS", "Redux Thunk"],
+    Flutter: ["Bloc", "Dart", "MVVM", "Rx Dart"],
+  },
+  Database: {
+    Database: [
+      "Mongodb",
+      "MySQL",
+      "MsSQL",
+      "Dynamodb",
+      "PostgreSQL",
+      "IBM",
+      "Redis",
+      "Elasticsearch",
+    ],
+  },
+  "Cloud & DevOps": {
+    DevOps: ["Nginx", "Docker", "Kubernetes", "Gradle", "Jenkins"],
+    Cloud: [
+      "Aws",
+      "Appium",
+      "Azure",
+      "Rackspace",
+      "Linode",
+      "Firebase",
+      "Oracle Cloud",
+      "Heroku",
+    ],
+  },
+};
