@@ -26,8 +26,8 @@ export const Discover = () => {
               built to empower your teams like never before
             </p>
             <div className="flex items-center gap-x-2">
-              <Button>Explore Rev AI</Button>
-              <Button variant={"ghost"}>Talk To Our Innovators</Button>
+              <Button variant={"secondary"}>Explore Rev AI</Button>
+              <Button variant={"secondary"}>Talk To Our Innovators</Button>
             </div>
           </div>
         </div>

@@ -1,11 +1,26 @@
 "use client";
 import { NAVBAR } from "@/feature/Layout/lib";
 import { buttonVariants, Container, Logo } from "@/shared/common";
+import { useMotionValueEvent, useScroll } from "motion/react";
 import Link from "next/link";
+import { useState } from "react";
 
 export const Navbar = () => {
+  const { scrollY } = useScroll();
+  const [scrolled, setScrolled] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrolled(latest > 5);
+  });
+
   return (
-    <nav className="border-b">
+    <nav
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-background/70 backdrop-blur-md shadow-md"
+          : "bg-background"
+      }`}
+    >
       <Container>
         <div className="flex justify-between items-center h-20">
           {/* Logo */}

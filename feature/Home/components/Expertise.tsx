@@ -37,7 +37,7 @@ export const Expertise = () => {
             {EXPERTISE.map(({ title, description, img, id }) => (
               <CarouselItem key={id} className="md:basis-1/2 lg:basis-1/3">
                 <motion.div
-                  className="relative overflow-hidden shadow-sm border py-10 px-6 rounded-xl bg-background"
+                  className="relative overflow-hidden shadow-sm py-10 px-8 rounded-xl bg-muted"
                   onHoverStart={() => setHoveredCard(id)}
                   onHoverEnd={() => setHoveredCard(null)}
                   transition={{ duration: 0.3, ease: "easeOut" }}
