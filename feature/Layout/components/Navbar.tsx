@@ -1,6 +1,7 @@
 "use client";
 import { NAVBAR } from "@/feature/Layout/lib";
 import { buttonVariants, Container, Logo } from "@/shared/common";
+import { cn } from "@/shared/lib";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
@@ -15,18 +16,19 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={cn(
+        "fixed top-0 w-full z-50 transition-all duration-300",
         scrolled
           ? "bg-background/70 backdrop-blur-md shadow-md"
-          : "bg-background"
-      }`}
+          : "bg-transparent text-background"
+      )}
     >
       <Container>
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <Logo />
+              <Logo variant={scrolled ? "dark" : "light"} />
             </Link>
           </div>
 

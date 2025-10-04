@@ -10,7 +10,7 @@ import {
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-primary text-background">
+    <footer className="bg-foreground text-background">
       <Container>
         {/* CTA Section */}
         <div className="py-16">
