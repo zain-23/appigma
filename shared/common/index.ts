@@ -1,6 +1,7 @@
 export * from "./WatermarkContent";
 export * from "./Portfolio";
 export * from "./Container";
+export * from "./Accordion";
 export * from "./Carousel";
 export * from "./Button";
 export * from "./Logo";

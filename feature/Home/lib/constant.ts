@@ -6,6 +6,26 @@ import AMJ from "../../../public/assets/portfolio/portfolio.webp";
 import TruthGpt from "../../../public/assets/portfolio/portfolio-2.webp";
 import FSK from "../../../public/assets/portfolio/portfolio-3.webp";
 import { TPortfolio } from "../types";
+// Awards
+import award1 from "../../../public/assets/awards/Clutch.webp";
+import award2 from "../../../public/assets/awards/Horizon.webp";
+import award3 from "../../../public/assets/awards/Horizon_Sliver.webp";
+import award4 from "../../../public/assets/awards/dot-com.webp";
+import award5 from "../../../public/assets/awards/expertise-logo.webp";
+import award6 from "../../../public/assets/awards/inc-5000.webp";
+import award7 from "../../../public/assets/awards/rank-watch.webp";
+import award8 from "../../../public/assets/awards/right-firms.webp";
+import award9 from "../../../public/assets/awards/top_Reated.webp";
+import award10 from "../../../public/assets/awards/top_developer.webp";
+// Icon
+import {
+  Mail,
+  Phone,
+  Facebook,
+  Youtube,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
 
 export const ACHIEVEMENT = [
   {
@@ -165,4 +185,240 @@ export const PORTFOLIOS: TPortfolio[] = [
     slug: "fsk",
     img: FSK,
   },
+];
+
+export const AWARDS = [
+  {
+    id: 1,
+    title: "INC. 5000",
+    description: "America's Fastest Growing Companies",
+    img: award6,
+  },
+  {
+    id: 2,
+    title: "Dot Comm",
+    description: "Excellence in Web Creativity & Digital Communication",
+    img: award4,
+  },
+  {
+    id: 3,
+    title: "Clutch",
+    description: "Top 1000 Companies",
+    img: award1,
+  },
+  {
+    id: 4,
+    title: "Top Developers",
+    description: "Top Entertainment App Developers",
+    img: award10,
+  },
+  {
+    id: 5,
+    title: "Expertise",
+    description: "Best Mobile App Developer",
+    img: award5,
+  },
+  {
+    id: 6,
+    title: "Software World",
+    description: "Top App Development Companies",
+    img: award9,
+  },
+  {
+    id: 7,
+    title: "Horizon Award",
+    description: "Gold Awards Winner",
+    img: award2,
+  },
+  {
+    id: 8,
+    title: "Rank Watch",
+    description: "Top Web Development Agency",
+    img: award7,
+  },
+  {
+    id: 9,
+    title: "Horizon Award",
+    description: "Silver Awards Winner",
+    img: award3,
+  },
+  {
+    id: 10,
+    title: "Right firms",
+    description: "Top Mobile App Development Company",
+    img: award8,
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    id: 1,
+    name: "Keith Cascarelli",
+    description:
+      "I have been working with TekRevol on my software development project for over a year now. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams. Their creative ditins made the difference in something that was good into something that I feel was great, I highly recommend TekRevol as my No 1 choice as enterprise software development team for any software entrepreneur.",
+    video: "./assets/testimonials/portfolio-1.mp4",
+    country: "USA",
+    designation: "WTT",
+  },
+  {
+    id: 2,
+    name: "Keith Cascarelli",
+    description:
+      "I have been working with TekRevol on my software development project for over a year now. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams. Their creative ditins made the difference in something that was good into something that I feel was great, I highly recommend TekRevol as my No 1 choice as enterprise software development team for any software entrepreneur.",
+    video: "./assets/testimonials/portfolio-1.mp4",
+    country: "USA",
+    designation: "WTT",
+  },
+  {
+    id: 3,
+    name: "Keith Cascarelli",
+    description:
+      "I have been working with TekRevol on my software development project for over a year now. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams. Their creative ditins made the difference in something that was good into something that I feel was great, I highly recommend TekRevol as my No 1 choice as enterprise software development team for any software entrepreneur.",
+    video: "./assets/testimonials/portfolio-1.mp4",
+    country: "USA",
+    designation: "WTT",
+  },
+  {
+    id: 4,
+    name: "Keith Cascarelli",
+    description:
+      "I have been working with TekRevol on my software development project for over a year now. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams. Their creative ditins made the difference in something that was good into something that I feel was great, I highly recommend TekRevol as my No 1 choice as enterprise software development team for any software entrepreneur.",
+    video: "./assets/testimonials/portfolio-1.mp4",
+    country: "USA",
+    designation: "WTT",
+  },
+];
+
+export const ACCORDION = [
+  {
+    id: 1,
+    question: "What mobile app development services do you offer?",
+    answer: {
+      title:
+        "We offer comprehensive mobile app development services, including:",
+      list: [
+        "Custom mobile app design and development",
+        "Native app development for iOS and Android platforms",
+        "Cross-platform app development using frameworks like React Native and Flutter",
+        "UI/UX design and optimization",
+        "App testing, debugging, and quality assurance",
+        "App deployment and maintenance support",
+      ],
+    },
+  },
+  {
+    id: 2,
+    question: "What mobile app development services do you offer?",
+    answer: {
+      title:
+        "We offer comprehensive mobile app development services, including:",
+      list: [
+        "Custom mobile app design and development",
+        "Native app development for iOS and Android platforms",
+        "Cross-platform app development using frameworks like React Native and Flutter",
+        "UI/UX design and optimization",
+        "App testing, debugging, and quality assurance",
+        "App deployment and maintenance support",
+      ],
+    },
+  },
+  {
+    id: 3,
+    question: "What mobile app development services do you offer?",
+    answer: {
+      title:
+        "We offer comprehensive mobile app development services, including:",
+      list: [
+        "Custom mobile app design and development",
+        "Native app development for iOS and Android platforms",
+        "Cross-platform app development using frameworks like React Native and Flutter",
+        "UI/UX design and optimization",
+        "App testing, debugging, and quality assurance",
+        "App deployment and maintenance support",
+      ],
+    },
+  },
+  {
+    id: 4,
+    question: "What mobile app development services do you offer?",
+    answer: {
+      title:
+        "We offer comprehensive mobile app development services, including:",
+      list: [
+        "Custom mobile app design and development",
+        "Native app development for iOS and Android platforms",
+        "Cross-platform app development using frameworks like React Native and Flutter",
+        "UI/UX design and optimization",
+        "App testing, debugging, and quality assurance",
+        "App deployment and maintenance support",
+      ],
+    },
+  },
+  {
+    id: 5,
+    question: "What mobile app development services do you offer?",
+    answer: {
+      title:
+        "We offer comprehensive mobile app development services, including:",
+      list: [
+        "Custom mobile app design and development",
+        "Native app development for iOS and Android platforms",
+        "Cross-platform app development using frameworks like React Native and Flutter",
+        "UI/UX design and optimization",
+        "App testing, debugging, and quality assurance",
+        "App deployment and maintenance support",
+      ],
+    },
+  },
+];
+
+// Footer Constants
+export const FOOTER_DATA = {
+  services: [
+    { title: "Mobile App Development", path: "/mobile-app-development" },
+    { title: "Web Development", path: "/web-development" },
+    { title: "AI Development", path: "ai-development" },
+  ],
+  quick_links: [
+    { title: "Home", path: "/" },
+    { title: "Servies", path: "/services" },
+    { title: "Portfolio", path: "/portfolio" },
+    { title: "About us", path: "/about-us" },
+    { title: "Contact us", path: "/contact-us" },
+  ],
+};
+
+export const FOOTER_LOCATIONS = [
+  "HOU",
+  "ATX",
+  "DTX",
+  "SF",
+  "MIA",
+  "CHI",
+  "NYC",
+  "DC",
+  "LA",
+  "DXB",
+  "QA",
+  "BH",
+  "KSA",
+  "LDN",
+];
+
+export const FOOTER_CONTACT = [
+  {
+    data: "+1800-362-9239",
+    icon: Mail,
+  },
+  {
+    data: "info@appigma.com",
+    icon: Phone,
+  },
+];
+
+export const FOOTER_SOCIAL_MEDIA = [
+  { name: "Facebook", icon: Facebook },
+  { name: "Instagram", icon: Instagram },
+  { name: "YouTube", icon: Youtube },
+  { name: "LinkedIn", icon: Linkedin },
 ];

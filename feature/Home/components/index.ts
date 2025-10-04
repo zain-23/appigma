@@ -4,3 +4,7 @@ export * from "./Discover";
 export * from "./Hero";
 export * from "./Expertise";
 export * from "./CaseStudies";
+export * from "./Cta";
+export * from "./Awards";
+export * from "./Testimonial";
+export * from "./Faq";

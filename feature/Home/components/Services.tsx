@@ -37,7 +37,7 @@ export const Services = () => {
             {SERVICES.map(({ title, description, img, id }) => (
               <CarouselItem key={id} className="md:basis-1/2 lg:basis-1/3">
                 <motion.div
-                  className="relative overflow-hidden shadow-sm border py-6 rounded-xl bg-background"
+                  className="relative overflow-hidden shadow-sm py-6 rounded-xl bg-muted"
                   onHoverStart={() => setHoveredCard(id)}
                   onHoverEnd={() => setHoveredCard(null)}
                   transition={{ duration: 0.3, ease: "easeOut" }}
@@ -59,7 +59,7 @@ export const Services = () => {
                   </motion.div>
 
                   <motion.div
-                    className="aspect-square p-6 flex flex-col justify-center gap-y-4"
+                    className="aspect-square flex flex-col justify-center gap-y-4 px-8"
                     animate={{
                       y: hoveredCard === id ? -10 : 0,
                     }}

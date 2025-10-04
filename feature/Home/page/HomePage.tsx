@@ -5,6 +5,10 @@ import {
   Services,
   Expertise,
   CaseStudies,
+  Cta,
+  Awards,
+  Testimonial,
+  Faq,
 } from "../components";
 
 export const HomePage = () => {
@@ -16,6 +20,10 @@ export const HomePage = () => {
       <Services />
       <Expertise />
       <CaseStudies />
+      <Cta />
+      <Awards />
+      <Testimonial />
+      <Faq />
     </>
   );
 };
