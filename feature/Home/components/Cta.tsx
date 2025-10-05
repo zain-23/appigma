@@ -1,16 +1,16 @@
-import { Button, Container } from "@/shared/common";
+import { Button, Container, SectionWrapper } from "@/shared/common";
 import Cta1 from "../../../public/assets/cta-1.webp";
 import Image from "next/image";
 
 export const Cta = () => {
   return (
-    <section className="py-20">
+    <SectionWrapper>
       <Container>
-        <div className="px-10 h-[65vh] bg-primary mt-6 rounded-3xl relative flex items-center justify-start">
+        <div className="px-10 h-[65vh] mt-6 rounded-3xl overflow-hidden relative flex items-center justify-start">
           {/* Bg Image */}
           <Image
             src={Cta1}
-            className="absolute top-0 left-0 w-full h-full"
+            className="absolute top-0 left-0 w-full h-full object-cover"
             alt="ai-revolution"
             fill
           />
@@ -28,6 +28,6 @@ export const Cta = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };

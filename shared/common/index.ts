@@ -10,3 +10,6 @@ export * from "./Form";
 export * from "./Input";
 export * from "./Textarea";
 export * from "./Label";
+export * from "./Rating";
+export * from "./SectionWrapper";
+export * from "./Clients";

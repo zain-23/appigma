@@ -1,8 +1,8 @@
-import { Button, Container } from "@/shared/common";
+import { Button, Container, SectionWrapper } from "@/shared/common";
 
 export const Hero = () => {
   return (
-    <section className="h-[90vh] relative">
+    <SectionWrapper className="h-[80vh] py-0 relative">
       {/* Background Video */}
       <video
         src="https://bfd6tumtbx.ufs.sh/f/LxNvt5anRP0UrnQQUAklLVYnWKPF0ajmzq6T9xyiUAQkhJBr"
@@ -13,7 +13,7 @@ export const Hero = () => {
       />
 
       {/* Bottom Gradient Overlay */}
-      <div className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-background to-transparent z-[-1]" />
+      <div className="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-t from-background to-transparent z-[-1]" />
 
       <Container className="h-full">
         <div className="flex justify-center items-start flex-col space-y-6 h-full w-[65%] text-background">
@@ -28,6 +28,6 @@ export const Hero = () => {
           <Button className="h-14 px-8 rounded-full">Schedule a Call</Button>
         </div>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };

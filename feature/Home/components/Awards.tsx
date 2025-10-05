@@ -1,10 +1,11 @@
-import { Container, WatermarkContent } from "@/shared/common";
+import { Container, SectionWrapper, WatermarkContent } from "@/shared/common";
 import { AWARDS } from "../lib";
 import Image from "next/image";
+import { cn } from "@/shared/lib";
 
 export const Awards = () => {
   return (
-    <section className="py-20">
+    <SectionWrapper>
       <Container>
         <div className="flex flex-col justify-center items-center text-center space-y-8 max-w-5xl mx-auto relative pb-10">
           <h2 className="text-6xl font-black">Awards & Recognition</h2>
@@ -20,10 +21,13 @@ export const Awards = () => {
             className="absolute z-[-1] bottom-0"
           />
         </div>
-        <div className="flex flex-wrap justify-center divide-y divide-x">
-          {AWARDS.map(({ description, id, img, title }) => (
+        <div className="flex flex-wrap justify-center divide-x">
+          {AWARDS.map(({ description, id, img, title }, index) => (
             <div
-              className="w-60 h-72 p-4 space-y-4 flex flex-col items-center justify-center"
+              className={cn(
+                "w-60 h-72 p-4 space-y-4 flex flex-col items-center justify-center",
+                index <= AWARDS.length - 5 && "border-b"
+              )}
               key={id}
             >
               <div className="w-[90%] h-36 relative">
@@ -37,6 +41,6 @@ export const Awards = () => {
           ))}
         </div>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };

@@ -6,13 +6,14 @@ import {
   AccordionItem,
   AccordionTrigger,
   Container,
+  SectionWrapper,
   WatermarkContent,
 } from "@/shared/common";
 import { ACCORDION } from "../lib";
 
 export const Faq = () => {
   return (
-    <section className="py-20">
+    <SectionWrapper>
       <Container>
         <div className="flex flex-col items-center relative">
           <h2 className="text-5xl font-black">Frequently Asked Questions</h2>
@@ -42,6 +43,6 @@ export const Faq = () => {
           ))}
         </Accordion>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };

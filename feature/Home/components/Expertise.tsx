@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
   Container,
+  SectionWrapper,
   WatermarkContent,
 } from "@/shared/common";
 import Image from "next/image";
@@ -20,7 +21,7 @@ export const Expertise = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
-    <section className="py-20">
+    <SectionWrapper>
       <Container>
         <WatermarkContent
           backText="Expertise"
@@ -34,7 +35,7 @@ export const Expertise = () => {
           className="w-full"
         >
           <CarouselContent>
-            {EXPERTISE.map(({ title, description, img, id }) => (
+            {EXPERTISE.map(({ title, description, img, id, icon }) => (
               <CarouselItem key={id} className="md:basis-1/2 lg:basis-1/3">
                 <motion.div
                   className="relative overflow-hidden shadow-sm py-10 px-8 rounded-xl bg-muted"
@@ -59,12 +60,15 @@ export const Expertise = () => {
                   </motion.div>
 
                   <motion.div
-                    className="aspect-video flex flex-col justify-center gap-y-4"
+                    className="aspect-video flex flex-col justify-center items-start gap-y-4"
                     animate={{
                       y: hoveredCard === id ? -10 : 0,
                     }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
                   >
+                    <span className="w-14 h-14 bg-primary rounded-full text-background flex justify-center items-center">
+                      {icon()}
+                    </span>
                     <h3
                       className={cn(
                         "text-3xl font-semibold transition-colors duration-300",
@@ -86,10 +90,12 @@ export const Expertise = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className="mt-4">
+            <CarouselNext />
+            <CarouselPrevious />
+          </div>
         </Carousel>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };

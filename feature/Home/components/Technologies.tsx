@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Container } from "@/shared/common";
+import { Button, Container, SectionWrapper } from "@/shared/common";
 import { TECHNOLOGIES } from "../lib";
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ export const Technologies = () => {
   const tecnologiesStack: Record<string, string[]> =
     TECHNOLOGIES[selectedTechnology];
   return (
-    <section className="py-20">
+    <SectionWrapper>
       <Container>
         <div className="max-w-4xl space-y-6">
           <h2 className="text-6xl font-black">Technologies we use</h2>
@@ -59,6 +59,6 @@ export const Technologies = () => {
           <div className="col-span-3" />
         </div>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };

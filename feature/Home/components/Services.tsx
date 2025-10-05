@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
   Container,
+  SectionWrapper,
   WatermarkContent,
 } from "@/shared/common";
 import Image from "next/image";
@@ -20,7 +21,7 @@ export const Services = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
-    <section className="py-20">
+    <SectionWrapper>
       <Container>
         <WatermarkContent
           backText="Core Servies"
@@ -34,7 +35,7 @@ export const Services = () => {
           className="w-full"
         >
           <CarouselContent>
-            {SERVICES.map(({ title, description, img, id }) => (
+            {SERVICES.map(({ title, description, img, id, icon }) => (
               <CarouselItem key={id} className="md:basis-1/2 lg:basis-1/3">
                 <motion.div
                   className="relative overflow-hidden shadow-sm py-6 rounded-xl bg-muted"
@@ -59,12 +60,13 @@ export const Services = () => {
                   </motion.div>
 
                   <motion.div
-                    className="aspect-square flex flex-col justify-center gap-y-4 px-8"
+                    className="aspect-square flex flex-col justify-center items-start gap-y-4 px-8"
                     animate={{
                       y: hoveredCard === id ? -10 : 0,
                     }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
                   >
+                    {icon()}
                     <h3
                       className={cn(
                         "text-3xl font-semibold transition-colors duration-300",
@@ -86,10 +88,12 @@ export const Services = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className="mt-4">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
         </Carousel>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };

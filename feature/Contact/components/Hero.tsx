@@ -4,13 +4,14 @@ import {
   CardHeader,
   CardTitle,
   Container,
+  SectionWrapper,
   WatermarkContent,
 } from "@/shared/common";
 import { ContactForm } from "./ContactForm";
 
 export const Hero = () => {
   return (
-    <section className="h-screen">
+    <SectionWrapper className="h-screen">
       <Container className="h-full">
         <div className="grid grid-cols-12 h-full gap-6 items-center">
           <div className="col-span-8 space-y-4 relative">
@@ -41,6 +42,6 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };

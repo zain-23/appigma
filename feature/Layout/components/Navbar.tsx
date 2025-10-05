@@ -1,26 +1,13 @@
-"use client";
 import { NAVBAR } from "@/feature/Layout/lib";
 import { buttonVariants, Container, Logo } from "@/shared/common";
 import { cn } from "@/shared/lib";
-import { useMotionValueEvent, useScroll } from "motion/react";
 import Link from "next/link";
-import { useState } from "react";
 
 export const Navbar = () => {
-  const { scrollY } = useScroll();
-  const [scrolled, setScrolled] = useState(false);
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    setScrolled(latest > 5);
-  });
-
   return (
     <nav
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled
-          ? "bg-background/30 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+        "fixed top-0 w-full z-50 transition-all duration-300 bg-background shadow-sm"
       )}
     >
       <Container>
@@ -28,7 +15,7 @@ export const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <Logo variant={scrolled ? "dark" : "light"} />
+              <Logo variant={"dark"} />
             </Link>
           </div>
 
