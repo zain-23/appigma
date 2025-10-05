@@ -2,17 +2,24 @@ import Image from "next/image";
 import { Button } from "../Button";
 import { FC } from "react";
 import { TPortfolio } from "@/feature/Home/types";
+import { cn } from "@/shared/lib";
 
-export const Portfolio: FC<TPortfolio> = ({
+export const Portfolio: FC<TPortfolio & { index: number }> = ({
   title,
   tags,
   description,
   features,
   img,
+  index,
 }) => {
   return (
     <div className="grid grid-cols-2 items-center">
-      <div className="col-span-1 space-y-6 pr-6">
+      <div
+        className={cn(
+          "col-span-1 space-y-6 pr-6",
+          index % 2 === 0 ? "order-1" : "order-2"
+        )}
+      >
         <h3 className="text-5xl font-black">{title}</h3>
         <div className="flex items-center gap-x-3">
           {tags.map((item) => (
@@ -34,7 +41,12 @@ export const Portfolio: FC<TPortfolio> = ({
           ))}
         </div>
       </div>
-      <div className="h-[600px] relative">
+      <div
+        className={cn(
+          "h-[600px] relative",
+          index % 2 === 0 ? "order-2" : "order-1"
+        )}
+      >
         <Image src={img} alt={title} fill />
       </div>
     </div>

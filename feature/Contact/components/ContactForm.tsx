@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  Button,
   Form,
   FormControl,
   FormDescription,
@@ -80,6 +81,7 @@ export const ContactForm = () => {
             </FormItem>
           )}
         />
+        <Button type="submit">Get In Touch</Button>
       </form>
     </Form>
   );

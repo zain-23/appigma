@@ -9,3 +9,5 @@ export * from "./Awards";
 export * from "./Testimonial";
 export * from "./Faq";
 export * from "./Technologies";
+export * from "./ServicesIcon";
+export * from "./ExpertiseIcon";

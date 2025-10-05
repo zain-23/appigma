@@ -26,6 +26,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import { ExpertiseIcon, ServicesIcon } from "../components";
 
 export const ACHIEVEMENT = [
   {
@@ -52,6 +53,7 @@ export const SERVICES = [
     description:
       "We design and develop high-performance mobile applications with seamless user experiences, robust security, and scalable architectures, tailored to meet user and business expansion needs.",
     img: MobileApplication,
+    icon: ServicesIcon.mobile,
   },
   {
     id: 2,
@@ -59,6 +61,7 @@ export const SERVICES = [
     description:
       "Our web development services deliver responsive, high-speed websites with secure, scalable back-end solutions, optimized for both user engagement and operational efficiency.",
     img: WebDevelopment,
+    icon: ServicesIcon.webDevelopment,
   },
   {
     id: 3,
@@ -66,6 +69,7 @@ export const SERVICES = [
     description:
       "We create custom software solutions that enhance business processes, featuring advanced integrations, strong security measures, and scalable designs to support your growth.",
     img: AIDevelopment,
+    icon: ServicesIcon.aiDevelopment,
   },
 ];
 
@@ -76,6 +80,7 @@ export const EXPERTISE = [
     description:
       "Implement IoT telematics and AI-driven predictive maintenance to optimize fleet management. Gain real-time data for enhanced vehicle performance and reduced downtime. Improve safety and efficiency with advanced analytics.",
     img: MobileApplication,
+    icon: ExpertiseIcon.Automotive,
   },
   {
     id: 2,
@@ -83,6 +88,7 @@ export const EXPERTISE = [
     description:
       "Utilize HIPAA-compliant telemedicine platforms and integrated EMR/EHR systems for streamlined patient care. Employ AI diagnostics for better outcomes and predictive analytics to enhance operational efficiency.",
     img: WebDevelopment,
+    icon: ExpertiseIcon.HealthCare,
   },
   {
     id: 3,
@@ -90,6 +96,7 @@ export const EXPERTISE = [
     description:
       "Adopt scalable cloud architectures with real-time GPS tracking and AI-driven demand forecasting. Ensure rapid, reliable service delivery and seamless user experiences. Scale effortlessly with fluctuating demands.",
     img: WebDevelopment,
+    icon: ExpertiseIcon.Demand,
   },
   {
     id: 4,
@@ -97,6 +104,7 @@ export const EXPERTISE = [
     description:
       "Leverage VR-enabled learning platforms and AI-driven personalized paths to enhance student engagement. Utilize real-time analytics for adaptive content and improved teaching strategies.",
     img: MobileApplication,
+    icon: ExpertiseIcon.Education,
   },
   {
     id: 5,
@@ -104,6 +112,7 @@ export const EXPERTISE = [
     description:
       "Deploy advanced streaming platforms with AI-driven recommendations and blockchain-based royalty management. Maximize revenue, enhance user engagement, and ensure secure transactions.",
     img: WebDevelopment,
+    icon: ExpertiseIcon.Music,
   },
   {
     id: 6,
@@ -111,6 +120,7 @@ export const EXPERTISE = [
     description:
       "Implement blockchain smart contracts, AI-driven fraud detection, and real-time payment processing for secure transactions. Use data analytics for personalized financial solutions and enhanced security.",
     img: MobileApplication,
+    icon: ExpertiseIcon.Fintech,
   },
   {
     id: 7,
@@ -118,6 +128,7 @@ export const EXPERTISE = [
     description:
       "Optimize operations with AI-driven route planning, IoT tracking, and advanced supply chain analytics. Improve delivery times, reduce costs, and gain real-time visibility and predictive insights.",
     img: WebDevelopment,
+    icon: ExpertiseIcon.Logistic,
   },
   {
     id: 8,
@@ -125,6 +136,7 @@ export const EXPERTISE = [
     description:
       "Integrate AI-powered inventory management and personalized recommendations with omnichannel sales. Drive customer loyalty, optimize stock levels, and increase sales through data-driven insights.",
     img: MobileApplication,
+    icon: ExpertiseIcon.Retail,
   },
   {
     id: 9,
@@ -132,6 +144,7 @@ export const EXPERTISE = [
     description:
       "Enhance platforms with scalable cloud infrastructure, secure payment gateways, and AI-driven customer behavior analytics. Boost conversions, improve user experience, and drive sustained growth.",
     img: WebDevelopment,
+    icon: ExpertiseIcon.Ecommerce,
   },
   {
     id: 10,
@@ -139,6 +152,7 @@ export const EXPERTISE = [
     description:
       "Modernize with VR property tours, AI-driven valuations, and blockchain smart contracts. Streamline transactions, enhance property visibility, and provide data-driven insights for better decisions.",
     img: MobileApplication,
+    icon: ExpertiseIcon.RealState,
   },
 ];
 

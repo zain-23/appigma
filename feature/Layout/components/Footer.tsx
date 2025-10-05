@@ -17,10 +17,7 @@ export const Footer = () => {
           <div className="text-center space-y-4">
             <p className="text-muted text-lg">Have a Project To Discuss?</p>
             <h2 className="text-6xl font-bold">We're ready!</h2>
-            <Link
-              href={"/contact-ud"}
-              className={buttonVariants({ variant: "secondary" })}
-            >
+            <Link href={"/contact-ud"} className={buttonVariants()}>
               LET'S CONNECT!
             </Link>
           </div>
@@ -43,7 +40,7 @@ export const Footer = () => {
                 <li key={title}>
                   <Link
                     className={buttonVariants({
-                      className: "!text-background",
+                      className: "!text-background !px-0",
                       variant: "link",
                     })}
                     href={path}
@@ -61,7 +58,7 @@ export const Footer = () => {
                 <li key={title}>
                   <Link
                     className={buttonVariants({
-                      className: "!text-background",
+                      className: "!text-background !px-0",
                       variant: "link",
                     })}
                     href={path}
@@ -74,7 +71,7 @@ export const Footer = () => {
           </div>
           <div className="col-span-1 space-y-6">
             <h4 className="text-2xl">Contact Us</h4>
-            <ul className="space-y-4 px-2">
+            <ul className="space-y-4">
               {FOOTER_CONTACT.map(({ data, icon: Icon }) => (
                 <li className="flex items-center" key={data}>
                   <Icon />
@@ -95,10 +92,10 @@ export const Footer = () => {
                 <Link
                   key={data.name}
                   href={""}
-                  className="w-10 h-10 bg-background rounded-full flex items-center justify-center"
+                  className="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
                   target="_blank"
                 >
-                  <data.icon className="text-primary" />
+                  <data.icon className="text-background" />
                 </Link>
               ))}
             </div>

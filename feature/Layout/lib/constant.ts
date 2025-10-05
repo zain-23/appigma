@@ -8,19 +8,19 @@ export const NAVBAR = [
   {
     id: 2,
     item: "Services",
-    path: "/",
+    path: "/services",
     type: "link",
   },
   {
     id: 3,
     item: "About us",
-    path: "/",
+    path: "/about-us",
     type: "link",
   },
   {
     id: 4,
     item: "Portfolio",
-    path: "/",
+    path: "/portfolio",
     type: "link",
   },
   {

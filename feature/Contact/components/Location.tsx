@@ -1,11 +1,11 @@
-import { Container } from "@/shared/common";
+import { Container, SectionWrapper } from "@/shared/common";
 import { BRANHES } from "../lib";
 import Image from "next/image";
 import { cn } from "@/shared/lib";
 
 export const CountryLocation = () => {
   return (
-    <section className="py-20">
+    <SectionWrapper>
       <Container>
         <div className="grid grid-cols-3 divide-x">
           {BRANHES.map(({ name, address, img }, index) => (
@@ -31,6 +31,6 @@ export const CountryLocation = () => {
           ))}
         </div>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };
