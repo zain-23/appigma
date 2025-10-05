@@ -14,7 +14,7 @@ import {
 } from "@/shared/common";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { contactForm, TContactForm } from "../schema";
+import { contactForm, TContactForm } from "../../../feature/Contact/schema";
 
 export const ContactForm = () => {
   const form = useForm<TContactForm>({

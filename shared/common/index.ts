@@ -13,3 +13,5 @@ export * from "./Label";
 export * from "./Rating";
 export * from "./SectionWrapper";
 export * from "./Clients";
+export * from "./ContactForm";
+export * from "./HoverCard";

@@ -6,8 +6,8 @@ import {
   Container,
   SectionWrapper,
   WatermarkContent,
+  ContactForm,
 } from "@/shared/common";
-import { ContactForm } from "./ContactForm";
 
 export const Hero = () => {
   return (
