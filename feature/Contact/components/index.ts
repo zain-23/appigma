@@ -1,2 +1,2 @@
-export * from "./ContactForm";
+export * from "../../../shared/common/ContactForm/ContactForm";
 export * from "./Location";
