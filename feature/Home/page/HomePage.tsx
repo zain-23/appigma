@@ -10,6 +10,7 @@ import {
   Testimonial,
   Faq,
   Technologies,
+  DevelopmentProcess,
 } from "../components";
 
 export const HomePage = () => {
@@ -23,6 +24,7 @@ export const HomePage = () => {
       <CaseStudies />
       <Cta />
       <Awards />
+      <DevelopmentProcess />
       <Technologies />
       <Testimonial />
       <Faq />

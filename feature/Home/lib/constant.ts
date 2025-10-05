@@ -27,6 +27,13 @@ import {
   Instagram,
 } from "lucide-react";
 import { ExpertiseIcon, ServicesIcon } from "../components";
+// Development Process
+import process1 from "../../../public/assets/development-process/ideate.webp";
+import process2 from "../../../public/assets/development-process/Design.webp";
+import process3 from "../../../public/assets/development-process/Development.webp";
+import process4 from "../../../public/assets/development-process/Test.webp";
+import process5 from "../../../public/assets/development-process/Launch.webp";
+import process6 from "../../../public/assets/development-process/NewSupport.webp";
 
 export const ACHIEVEMENT = [
   {
@@ -508,3 +515,49 @@ export const TECHNOLOGIES = {
     ],
   },
 };
+
+// Development Process
+export const DEVELOPMENT_PROCESS = [
+  {
+    id: 1,
+    title: "Ideate",
+    description:
+      "We analyze your vision thoroughly to ensure the roadmap is perfectly aligned with your end goals, setting the stage for product success.",
+    image: process1,
+  },
+  {
+    id: 2,
+    title: "Design",
+    description:
+      "Our creative team crafts intuitive designs that deliver both aesthetics and usability, focusing on seamless user experience.",
+    image: process2,
+  },
+  {
+    id: 3,
+    title: "Develop",
+    description:
+      "We write clean, scalable code using modern frameworks and best practices to turn designs into powerful digital products.",
+    image: process3,
+  },
+  {
+    id: 4,
+    title: "Test",
+    description:
+      "We write clean, scalable code using modern frameworks and best practices to turn designs into powerful digital products.",
+    image: process4,
+  },
+  {
+    id: 5,
+    title: "Launch",
+    description:
+      "We write clean, scalable code using modern frameworks and best practices to turn designs into powerful digital products.",
+    image: process5,
+  },
+  {
+    id: 6,
+    title: "Support",
+    description:
+      "We write clean, scalable code using modern frameworks and best practices to turn designs into powerful digital products.",
+    image: process6,
+  },
+];

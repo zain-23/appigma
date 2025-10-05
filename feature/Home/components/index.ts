@@ -11,3 +11,4 @@ export * from "./Faq";
 export * from "./Technologies";
 export * from "./ServicesIcon";
 export * from "./ExpertiseIcon";
+export * from "./DevelopmentProcess";
