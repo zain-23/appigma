@@ -23,10 +23,4 @@ export const NAVBAR = [
     path: "/portfolio",
     type: "link",
   },
-  {
-    id: 5,
-    item: "Contact us",
-    path: "/contact-us",
-    type: "button",
-  },
 ];

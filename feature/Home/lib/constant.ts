@@ -561,3 +561,18 @@ export const DEVELOPMENT_PROCESS = [
     image: process6,
   },
 ];
+
+export const OUR_JOURNEY = [
+  {
+    number: "1,300+",
+    title: "Completed Projects",
+  },
+  {
+    number: "350+",
+    title: "Completed Projects",
+  },
+  {
+    number: "1,300+",
+    title: "Completed Projects",
+  },
+];

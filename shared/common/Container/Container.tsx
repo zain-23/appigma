@@ -7,7 +7,13 @@ export const Container: FC<HTMLAttributes<HTMLDivElement>> = ({
   ...rest
 }) => {
   return (
-    <div className={cn("max-w-[1600px] mx-auto px-2", className)} {...rest}>
+    <div
+      className={cn(
+        "2xl:max-w-[1600px] xl:max-w-[1350px] max-w-7xl mx-auto px-4",
+        className
+      )}
+      {...rest}
+    >
       {children}
     </div>
   );

@@ -43,7 +43,7 @@ export const Portfolio: FC<TPortfolio & { index: number }> = ({
       </div>
       <div
         className={cn(
-          "h-[75vh] relative",
+          "h-[70vh] relative",
           index % 2 === 0 ? "order-2" : "order-1"
         )}
       >

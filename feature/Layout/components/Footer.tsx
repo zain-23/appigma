@@ -95,7 +95,7 @@ export const Footer = () => {
                   className="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
                   target="_blank"
                 >
-                  <data.icon className="text-background" />
+                  <data.icon className="text-secondary-foreground" />
                 </Link>
               ))}
             </div>
