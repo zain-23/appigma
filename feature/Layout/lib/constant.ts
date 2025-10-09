@@ -9,7 +9,24 @@ export const NAVBAR = [
     id: 2,
     item: "Services",
     path: "/services",
-    type: "link",
+    type: "sub_menu",
+    subMenu: [
+      {
+        id: 1,
+        item: "Mobile Application Development",
+        path: "/mobile-application-development",
+      },
+      {
+        id: 2,
+        item: "Web Application Development",
+        path: "/web-application-development",
+      },
+      {
+        id: 3,
+        item: "AI Development",
+        path: "/ai-development",
+      },
+    ],
   },
   {
     id: 3,
