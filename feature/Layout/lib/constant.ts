@@ -14,17 +14,17 @@ export const NAVBAR = [
       {
         id: 1,
         item: "Mobile Application Development",
-        path: "/mobile-application-development",
+        path: "/services/mobile-application-development",
       },
       {
         id: 2,
         item: "Web Application Development",
-        path: "/web-application-development",
+        path: "/services/web-application-development",
       },
       {
         id: 3,
         item: "AI Development",
-        path: "/ai-development",
+        path: "/services/ai-development",
       },
     ],
   },
