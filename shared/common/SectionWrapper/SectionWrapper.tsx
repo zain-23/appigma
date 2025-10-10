@@ -6,5 +6,9 @@ export const SectionWrapper: FC<HTMLAttributes<HTMLDivElement>> = ({
   className,
   ...props
 }) => {
-  return <section className={cn("py-20", className)}>{children}</section>;
+  return (
+    <section className={cn("py-20", className)} {...props}>
+      {children}
+    </section>
+  );
 };

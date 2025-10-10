@@ -1,4 +1,15 @@
-import { Demand, Expertise, Hero, Services, TopBrand } from "../components";
+import { AwardRecognization, Faq } from "@/shared/common";
+import {
+  Demand,
+  Expertise,
+  Hero,
+  Industry,
+  Innovation,
+  LeadingBusiness,
+  MultiDomain,
+  Services,
+  TopBrand,
+} from "../components";
 
 export const ServicePage = () => {
   return (
@@ -8,6 +19,12 @@ export const ServicePage = () => {
       <Demand />
       <Services />
       <Expertise />
+      <MultiDomain />
+      <LeadingBusiness />
+      <Industry />
+      <Innovation />
+      <AwardRecognization />
+      <Faq />
     </>
   );
 };

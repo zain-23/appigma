@@ -1,3 +1,4 @@
+import { Faq } from "@/shared/common";
 import {
   Achievement,
   Discover,
@@ -8,7 +9,6 @@ import {
   Cta,
   Awards,
   Testimonial,
-  Faq,
   Technologies,
   DevelopmentProcess,
 } from "../components";

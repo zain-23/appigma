@@ -16,3 +16,7 @@ export * from "./Clients";
 export * from "./ContactForm";
 export * from "./HoverCard";
 export * from "./NavigationMenu";
+export * from "./Icon";
+export * from "./Cta";
+export * from "./Award";
+export * from "./Faq";

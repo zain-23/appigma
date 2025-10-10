@@ -23,7 +23,7 @@ export const Services = () => {
               <div className="bg-primary w-10 h-10 rounded-full font-semibold flex justify-center items-center">
                 {id.toString().padStart(2, "0")}
               </div>
-              <h5 className="text-primary text-2xl font-semibold">{title}</h5>
+              <h5 className="text-2xl font-semibold">{title}</h5>
               <p className="leading-relaxed text-muted-foreground">
                 {description}
               </p>

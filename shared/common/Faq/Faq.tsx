@@ -1,5 +1,5 @@
 "use client";
-
+import { ACCORDION } from "@/feature/Home/lib";
 import {
   Accordion,
   AccordionContent,
@@ -9,7 +9,6 @@ import {
   SectionWrapper,
   WatermarkContent,
 } from "@/shared/common";
-import { ACCORDION } from "../lib";
 
 export const Faq = () => {
   return (

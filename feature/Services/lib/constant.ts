@@ -1,4 +1,4 @@
-import { Button } from "@/shared/common";
+import { Button, WebIcon } from "@/shared/common";
 // Brands
 import brand1 from "../../../public/assets/brands/milocare.webp";
 import brand2 from "../../../public/assets/brands/onsite.webp";
@@ -22,6 +22,10 @@ import model9 from "../../../public/assets/services/ai/stable.svg";
 import model10 from "../../../public/assets/services/ai/palm.svg";
 import model11 from "../../../public/assets/services/ai/whisper.svg";
 import model12 from "../../../public/assets/services/ai/vicuna.svg";
+
+import readyAICtaBgImg from "../../../public/assets/services/ai/ready-ai-cta.webp";
+import innovationBgImg from "../../../public/assets/services/ai/ai-journey-cta.webp";
+import { Icon } from "../components";
 
 const BRANDS = [
   {
@@ -129,14 +133,122 @@ const AI_STACK = [
   },
 ];
 
+const MULTI_DOMAIN_SERVICES = [
+  {
+    id: 1,
+    title: "Machine Learning",
+    description:
+      "As an experienced AI/ML development company, we don’t just deploy models but refine them for scale, resilience, and precision. Our expertise converts raw data into predictive intelligence that guides strategy and business growth.",
+    icon: Icon.machine_learning,
+  },
+  {
+    id: 2,
+    title: "Generative AI & LLM Engineering",
+    description:
+      "As an experienced AI/ML development company, we don’t just deploy models but refine them for scale, resilience, and precision. Our expertise converts raw data into predictive intelligence that guides strategy and business growth.",
+    icon: Icon.generative_ai,
+  },
+  {
+    id: 3,
+    title: "Deep Learning",
+    description:
+      "As an experienced AI/ML development company, we don’t just deploy models but refine them for scale, resilience, and precision. Our expertise converts raw data into predictive intelligence that guides strategy and business growth.",
+    icon: Icon.deep_learning,
+  },
+  {
+    id: 4,
+    title: "Predictive Analytics",
+    description:
+      "As an experienced AI/ML development company, we don’t just deploy models but refine them for scale, resilience, and precision. Our expertise converts raw data into predictive intelligence that guides strategy and business growth.",
+    icon: Icon.predictive,
+  },
+  {
+    id: 5,
+    title: "Natural Language Processing (NLP)",
+    description:
+      "As an experienced AI/ML development company, we don’t just deploy models but refine them for scale, resilience, and precision. Our expertise converts raw data into predictive intelligence that guides strategy and business growth.",
+    icon: Icon.natural_language,
+  },
+  {
+    id: 6,
+    title: "Data Science",
+    description:
+      "As an experienced AI/ML development company, we don’t just deploy models but refine them for scale, resilience, and precision. Our expertise converts raw data into predictive intelligence that guides strategy and business growth.",
+    icon: Icon.data_science,
+  },
+  {
+    id: 7,
+    title: "Computer Vision",
+    description:
+      "As an experienced AI/ML development company, we don’t just deploy models but refine them for scale, resilience, and precision. Our expertise converts raw data into predictive intelligence that guides strategy and business growth.",
+    icon: Icon.computer_vision,
+  },
+  {
+    id: 8,
+    title: "Speech Recognition",
+    description:
+      "As an experienced AI/ML development company, we don’t just deploy models but refine them for scale, resilience, and precision. Our expertise converts raw data into predictive intelligence that guides strategy and business growth.",
+    icon: Icon.speech_recognition,
+  },
+  {
+    id: 9,
+    title: "Reinforcement Learning",
+    description:
+      "As an experienced AI/ML development company, we don’t just deploy models but refine them for scale, resilience, and precision. Our expertise converts raw data into predictive intelligence that guides strategy and business growth.",
+    icon: Icon.reinforcement,
+  },
+];
+
+const INDUSTRY = [
+  {
+    id: 1,
+    title: "Healthcare",
+    icon: WebIcon.industry.healthcare,
+  },
+  {
+    id: 2,
+    title: "Real Estate",
+    icon: WebIcon.industry.real_state,
+  },
+  {
+    id: 3,
+    title: "Ecommerce",
+    icon: WebIcon.industry.ecomerce,
+  },
+  {
+    id: 4,
+    title: "Logistics and Supply Chain",
+    icon: WebIcon.industry.logistic,
+  },
+  {
+    id: 5,
+    title: "Sports",
+    icon: WebIcon.industry.sport,
+  },
+  {
+    id: 6,
+    title: "Fintech",
+    icon: WebIcon.industry.fintech,
+  },
+  {
+    id: 7,
+    title: "Gaming",
+    icon: WebIcon.industry.gaming,
+  },
+  {
+    id: 8,
+    title: "Manufacturing",
+    icon: WebIcon.industry.manufacturing,
+  },
+];
+
 export const SERVICES = {
-  "ai-automation": {
+  "ai-development": {
     path: "/services/ai-development",
     heroSection: {
       title: "AI Development Services",
       description:
         "Tekrevol is a renowned AI development services company in the USA, trusted worldwide for its automation solutions. We develop artificial intelligence software and apps for businesses of all sizes to discard manual processes. Our AI solutions are designed to streamline workflows and augment operations for measurable results without unnecessary delays.",
-      button: Button,
       btnContent: "Talk To Your AI Consultant",
       heroBgImg: aiAutomationBgImage,
     },
@@ -231,6 +343,34 @@ export const SERVICES = {
       title: "We Have Mastered Every AI Model",
       stack: AI_STACK,
       bgImg: expertiseBgImg,
+    },
+    multiDomain: {
+      title:
+        "TekRevol: The Only Artificial Intelligence Development Company With Multi-Domain Expertise",
+      description:
+        "Holding the status of a top Artificial Intelligence development company, our core expertise isn’t just about offering AI services. We excel in the areas that matter most for impact and scalability. Instead of a broad checklist, we bring unmatched depth and specialization into:",
+      data: MULTI_DOMAIN_SERVICES,
+    },
+    leading_business: {
+      title:
+        "Join the List of Leading Businesses Using AI to Streamline Operations and Accelerate Growth",
+      description:
+        "Our artificial intelligence solutions help businesses operate more efficiently and make decisions faster. See how companies are benefiting from smarter workflows and tangible growth with TekRevol.",
+      btnContent: "Get Your Free AI Consultation Today",
+      bgImg: readyAICtaBgImg,
+    },
+    powered_solution: {
+      title: "Our AI-Powered Solutions Are Changing Every Industry",
+      description:
+        "At Tekrevol, we meet the artificial intelligence solution requirements of multiple industries. Our custom AI software development services help businesses adopt AI technologies to solve their industry-specific challenges.",
+      industry: INDUSTRY,
+    },
+    innovation: {
+      title: "Take the Next Step Toward AI-Drive Innovation With Appigma",
+      description:
+        "Reserve a free 30-minute consultation with our AI experts. See how our solutions can streamline processes, boost revenue, and align with your business goals.",
+      btnContent: "Schedule Your Free Consultation Call",
+      bgImg: innovationBgImg,
     },
   },
 };

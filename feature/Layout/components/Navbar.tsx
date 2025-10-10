@@ -20,8 +20,8 @@ import { useState } from "react";
 export const Navbar = () => {
   const [scroll, setScroll] = useState(false);
   const pathname = usePathname();
-
   const { scrollY } = useScroll();
+
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest > 5) {
       setScroll(true);
@@ -42,7 +42,14 @@ export const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <Logo variant={scroll || pathname !== "/" ? "dark" : "light"} />
+              <Logo
+                variant={
+                  scroll ||
+                  (pathname !== "/" && !pathname.startsWith("/services"))
+                    ? "dark"
+                    : "light"
+                }
+              />
             </Link>
           </div>
 
@@ -51,7 +58,8 @@ export const Navbar = () => {
             <NavigationMenuList
               className={cn(
                 "gap-6",
-                !scroll && pathname === "/" && "text-background"
+                !scroll && pathname === "/" && "text-background",
+                !scroll && pathname.startsWith("/services") && "text-background"
               )}
             >
               {NAVBAR.map((item) => {
