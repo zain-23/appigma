@@ -129,7 +129,7 @@ export const Footer = () => {
               })}
               href={"/terms-condition"}
             >
-              Terms and Conditions
+              Terms and Condition
             </Link>
             <Link
               className={buttonVariants({
