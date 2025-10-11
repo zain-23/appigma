@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { Button } from "../Button";
+import { Button, buttonVariants } from "../Button";
 import { FC } from "react";
 import { TPortfolio } from "@/feature/Home/types";
 import { cn } from "@/shared/lib";
+import Link from "next/link";
 
 export const Portfolio: FC<TPortfolio & { index: number }> = ({
   title,
@@ -11,12 +12,13 @@ export const Portfolio: FC<TPortfolio & { index: number }> = ({
   features,
   img,
   index,
+  slug,
 }) => {
   return (
     <div className="grid grid-cols-2 items-center">
       <div
         className={cn(
-          "col-span-1 space-y-6 pr-6",
+          "col-span-1 space-y-10 pr-6",
           index % 2 === 0 ? "order-1" : "order-2"
         )}
       >
@@ -40,6 +42,15 @@ export const Portfolio: FC<TPortfolio & { index: number }> = ({
             </Button>
           ))}
         </div>
+        <Link
+          href={`/case-studies/${slug}`}
+          className={buttonVariants({
+            variant: "link",
+            className: "!text-2xl",
+          })}
+        >
+          VIEW CASE STUDY
+        </Link>
       </div>
       <div
         className={cn(
