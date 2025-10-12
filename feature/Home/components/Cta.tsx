@@ -6,25 +6,27 @@ export const Cta = () => {
   return (
     <SectionWrapper>
       <Container>
-        <div className="px-10 h-[65vh] mt-6 rounded-3xl overflow-hidden relative flex items-center justify-start">
+        <div className="px-4 md:px-6 lg:px-10 h-[55vh] lg:h-[65vh] bg-accent-foreground mt-4 md:mt-6 rounded-2xl md:rounded-3xl overflow-hidden relative flex items-center justify-start">
           {/* Bg Image */}
           <Image
             src={Cta1}
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="lg:absolute hidden top-0 left-0 w-full h-full object-cover"
             alt="ai-revolution"
             fill
           />
-          <div className="col-span-1 text-primary-foreground space-y-6 relative z-[1] max-w-[50%]">
-            <h3 className="text-5xl leading-tight font-bold">
+          <div className="col-span-1 text-primary-foreground space-y-4 md:space-y-6 relative z-[1] w-full md:max-w-[70%] lg:max-w-[50%]">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-semibold">
               Great Products Start With Bold Decisions And The Right Tech
               Partner
             </h3>
-            <p className="leading-relaxed text-xl">
+            <p className="leading-relaxed text-base md:text-lg lg:text-xl">
               At TekRevol, we transform your digital vision into scalable,
               high-performance solutions - on time, on brand, and beyond
               expectations.
             </p>
-            <Button variant={"secondary"}>Talk To Our Innovators</Button>
+            <Button variant={"secondary"} className="w-full sm:w-auto">
+              Talk To Our Innovators
+            </Button>
           </div>
         </div>
       </Container>

@@ -7,7 +7,7 @@ import {
   Expertise,
   CaseStudies,
   Cta,
-  Awards,
+  Journey,
   Testimonial,
   Technologies,
   DevelopmentProcess,
@@ -23,7 +23,7 @@ export const HomePage = () => {
       <Expertise />
       <CaseStudies />
       <Cta />
-      <Awards />
+      <Journey />
       <DevelopmentProcess />
       <Technologies />
       <Testimonial />

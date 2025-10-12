@@ -1,60 +1,69 @@
-"use client";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
   Container,
+  Rating,
   SectionWrapper,
-  WatermarkContent,
 } from "@/shared/common";
-import AutoPlay from "embla-carousel-autoplay";
 import { TESTIMONIALS } from "../lib";
+import Image from "next/image";
 
 export const Testimonial = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper className="bg-[radial-gradient(circle_at_right,_#004a2e_0%,_#001a0f_50%,_#000000_100%)]">
       <Container>
-        <WatermarkContent
-          frontText="What Our Clients Say About Us"
-          backText="Our Clients"
-        />
-        <Carousel
-          plugins={[
-            AutoPlay({
-              delay: 5000,
-            }),
-          ]}
-        >
-          <CarouselContent className="-ml-1 mt-10">
+        <div className="max-w-6xl mx-auto text-center space-y-4 md:space-y-6 text-background">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
+            Our clients simply love{" "}
+            <span className="text-pretty">what we do</span>
+          </h2>
+          <p className="text-base md:text-lg lg:text-xl px-4 md:px-0">
+            Proud to serve as the innovation partner for industry leaders who
+            have experienced our expertise and excellence firsthand.
+          </p>
+          <div className="flex flex-col gap-y-6 md:gap-y-8 mt-12 md:mt-16 lg:mt-20">
             {TESTIMONIALS.map(
-              ({ id, video, name, country, description, designation }) => (
-                <CarouselItem key={id}>
-                  <div className="grid grid-cols-12 items-center p-1">
-                    <div className="col-span-6 aspect-video overflow-hidden rounded-2xl">
-                      <video src={video} controls></video>
-                    </div>
-                    <div className="col-span-6 space-y-4 pl-20">
-                      <div className="flex justify-between items-center">
-                        <div className="space-y-1">
-                          <h4 className="text-3xl font-semibold">{name}</h4>
-                          <span className="text-xl">{designation}</span>
+              ({ description, designation, id, name, initials, logo }) => (
+                <Card
+                  key={id}
+                  className="py-8 md:py-10 lg:py-14 bg-accent-foreground text-background border-muted-foreground"
+                >
+                  <CardHeader className="px-4 md:px-6 lg:px-8">
+                    <CardTitle className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-start font-medium leading-relaxed md:leading-snug">
+                      "{description}"
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="px-4 md:px-6 lg:px-8">
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                      <div className="flex items-center gap-3 md:gap-4">
+                        <div className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 bg-primary flex items-center justify-center text-foreground rounded-full flex-shrink-0">
+                          <span className="text-lg md:text-xl lg:text-2xl font-medium">
+                            {initials}
+                          </span>
                         </div>
-                        <span className="text-xl font-medium">{country}</span>
+                        <div className="space-y-1">
+                          <p className="text-base md:text-lg lg:text-xl">
+                            {name}, {designation}
+                          </p>
+                          <Rating rating={5} />
+                        </div>
                       </div>
-                      <p className="leading-loose text-lg">"{description}"</p>
+                      <Image
+                        src={logo}
+                        alt={designation}
+                        width={400}
+                        height={400}
+                        className="w-16 md:w-20 lg:w-24 h-auto self-end sm:self-center"
+                      />
                     </div>
-                  </div>
-                </CarouselItem>
+                  </CardContent>
+                </Card>
               )
             )}
-          </CarouselContent>
-          <div className="mt-4">
-            <CarouselNext />
-            <CarouselPrevious />
           </div>
-        </Carousel>
+        </div>
       </Container>
     </SectionWrapper>
   );
