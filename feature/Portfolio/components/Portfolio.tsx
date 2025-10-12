@@ -8,7 +8,7 @@ export const Portfolio = () => {
   return (
     <SectionWrapper>
       <Container>
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
           {PORTFOLIOS.map((portfolio) => (
             <PortfolioCard
               key={portfolio.id}

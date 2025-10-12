@@ -9,19 +9,26 @@ export const Clients = () => {
   return (
     <SectionWrapper>
       <Container>
-        <div>
+        <div className="space-y-4 md:space-y-6">
           <WatermarkContent frontText="Our Clients" backText="Clients" />
-          <p className="text-lg leading-relaxed">
+          <p className="text-sm md:text-base lg:text-lg leading-relaxed">
             We contribute to these partnership programs, supported by global
             technology experts. Partnering with industry leaders, we offer
             quality technology solutions that meet your business needs.
           </p>
         </div>
         {/* Logos */}
-        <div className="grid grid-cols-6 mt-10 border">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mt-6 md:mt-8 lg:mt-10 border border-border/50 rounded-lg overflow-hidden">
           {COMPANY_LOGO.map((img, index) => (
-            <HoverCard key={index}>
-              <Image src={img} alt={`Company-logo-${index + 1}`} />
+            <HoverCard
+              key={index}
+              className="p-4 md:p-6 hover:bg-muted/50 transition-colors flex justify-center items-center"
+            >
+              <Image
+                src={img}
+                alt={`Company-logo-${index + 1}`}
+                className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
             </HoverCard>
           ))}
         </div>
