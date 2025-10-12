@@ -10,7 +10,7 @@ export const Cta = () => {
           {/* Bg Image */}
           <Image
             src={Cta1}
-            className="lg:absolute hidden top-0 left-0 w-full h-full object-cover"
+            className="absolute top-0 left-0 w-full h-full object-cover"
             alt="ai-revolution"
             fill
           />
