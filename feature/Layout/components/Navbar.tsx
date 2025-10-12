@@ -16,6 +16,7 @@ import { useMotionValueEvent, useScroll } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { MobileMenu } from "./MobileMenu";
 
 export const Navbar = () => {
   const [scroll, setScroll] = useState(false);
@@ -40,21 +41,20 @@ export const Navbar = () => {
       <Container>
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/">
-              <Logo
-                variant={
-                  scroll ||
-                  (pathname !== "/" && !pathname.startsWith("/services"))
-                    ? "dark"
-                    : "light"
-                }
-              />
-            </Link>
-          </div>
+          <Link href="/">
+            <Logo
+              variant={
+                scroll ||
+                (pathname !== "/" && !pathname.startsWith("/services"))
+                  ? "dark"
+                  : "light"
+              }
+              className="lg:w-80 md:w-60 w-44"
+            />
+          </Link>
 
-          {/* Navigation Items */}
-          <NavigationMenu viewport={false}>
+          {/* Navigation Items - Desktop */}
+          <NavigationMenu viewport={false} className="lg:flex hidden">
             <NavigationMenuList
               className={cn(
                 "gap-6",
@@ -100,14 +100,23 @@ export const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <Link
-            href={"/contact-us"}
-            className={buttonVariants({
-              className: "h-12 !rounded-full px-8 !text-lg",
-            })}
-          >
-            Contact us
-          </Link>
+          {/* Right Side Actions */}
+          <div className="flex items-center gap-4">
+            <Link
+              href={"/contact-us"}
+              className={cn(
+                buttonVariants({
+                  className: "h-12 px-8",
+                }),
+                "hidden lg:flex text-lg rounded-full"
+              )}
+            >
+              Contact us
+            </Link>
+
+            {/* Mobile Menu */}
+            <MobileMenu scroll={scroll} pathname={pathname} />
+          </div>
         </div>
       </Container>
     </nav>

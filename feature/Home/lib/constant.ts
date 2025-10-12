@@ -34,6 +34,8 @@ import process3 from "../../../public/assets/development-process/Development.web
 import process4 from "../../../public/assets/development-process/Test.webp";
 import process5 from "../../../public/assets/development-process/Launch.webp";
 import process6 from "../../../public/assets/development-process/NewSupport.webp";
+// Testimonial clients company logo
+import clientCompanyLogo from "../../../public/assets/testimonials/pauseitive_updated.svg";
 
 export const ACHIEVEMENT = [
   {
@@ -276,37 +278,38 @@ export const TESTIMONIALS = [
     id: 1,
     name: "Keith Cascarelli",
     description:
-      "I have been working with TekRevol on my software development project for over a year now. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams. Their creative ditins made the difference in something that was good into something that I feel was great, I highly recommend TekRevol as my No 1 choice as enterprise software development team for any software entrepreneur.",
-    video: "./assets/testimonials/portfolio-1.mp4",
-    country: "USA",
+      "I have been working with TekRevol on  their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams.",
     designation: "WTT",
+    initials: "KC",
+    logo: clientCompanyLogo,
   },
   {
     id: 2,
-    name: "Keith Cascarelli",
+    name: "Jackie Dallas",
     description:
-      "I have been working with TekRevol on my software development project for over a year now. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams. Their creative ditins made the difference in something that was good into something that I feel was great, I highly recommend TekRevol as my No 1 choice as enterprise software development team for any software entrepreneur.",
-    video: "./assets/testimonials/portfolio-1.mp4",
-    country: "USA",
-    designation: "WTT",
+      "I have been working. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams.",
+    designation: "Digital Manager",
+    initials: "JD",
+    logo: clientCompanyLogo,
   },
   {
     id: 3,
-    name: "Keith Cascarelli",
+    name: "Hamed Al Zadjal",
     description:
-      "I have been working with TekRevol on my software development project for over a year now. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams. Their creative ditins made the difference in something that was good into something that I feel was great, I highly recommend TekRevol as my No 1 choice as enterprise software development team for any software entrepreneur.",
-    video: "./assets/testimonials/portfolio-1.mp4",
+      "I have been working with TekRevol on my software development project for over a year now. clearly laying out work steps. The most impressive piece of experience was the communication with their teams.",
     country: "USA",
-    designation: "WTT",
+    designation: "Co-Founder and CEO",
+    initials: "HA",
+    logo: clientCompanyLogo,
   },
   {
     id: 4,
     name: "Keith Cascarelli",
     description:
-      "I have been working with TekRevol on my software development project for over a year now. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams. Their creative ditins made the difference in something that was good into something that I feel was great, I highly recommend TekRevol as my No 1 choice as enterprise software development team for any software entrepreneur.",
-    video: "./assets/testimonials/portfolio-1.mp4",
-    country: "USA",
-    designation: "WTT",
+      "I have been working with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams.",
+    designation: "Founder",
+    initials: "HA",
+    logo: clientCompanyLogo,
   },
 ];
 
@@ -569,10 +572,10 @@ export const OUR_JOURNEY = [
   },
   {
     number: "350+",
-    title: "Completed Projects",
+    title: "Talented appgima",
   },
   {
-    number: "1,300+",
-    title: "Completed Projects",
+    number: "600+",
+    title: "Satisfied Clients",
   },
 ];

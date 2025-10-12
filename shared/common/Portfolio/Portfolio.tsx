@@ -15,28 +15,35 @@ export const Portfolio: FC<TPortfolio & { index: number }> = ({
   slug,
 }) => {
   return (
-    <div className="grid grid-cols-2 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-0">
       <div
         className={cn(
-          "col-span-1 space-y-10 pr-6",
-          index % 2 === 0 ? "order-1" : "order-2"
+          "col-span-1 space-y-4 md:space-y-6 lg:space-y-10 lg:pr-6",
+          index % 2 === 0 ? "lg:order-1" : "lg:order-2"
         )}
       >
-        <h3 className="text-5xl font-black">{title}</h3>
-        <div className="flex items-center gap-x-3">
+        <h3 className="text-2xl md:text-4xl lg:text-5xl font-semibold">
+          {title}
+        </h3>
+        <div className="flex items-center gap-2 md:gap-3 flex-wrap">
           {tags.map((item) => (
-            <Button key={item} className="pointer-events-none">
+            <Button
+              key={item}
+              className="pointer-events-none text-sm md:text-base"
+            >
               {item}
             </Button>
           ))}
         </div>
-        <p className="leading-loose text-lg">{description}</p>
-        <div className="flex flex-col items-start gap-y-5">
+        <p className="leading-relaxed md:leading-loose text-base md:text-lg">
+          {description}
+        </p>
+        <div className="flex flex-col items-start gap-y-3 md:gap-y-4 lg:gap-y-5">
           {features.map((item) => (
             <Button
               key={item}
               variant={"secondary"}
-              className="pointer-events-none"
+              className="pointer-events-none text-sm md:text-base"
             >
               {item}
             </Button>
@@ -46,7 +53,7 @@ export const Portfolio: FC<TPortfolio & { index: number }> = ({
           href={`/case-studies/${slug}`}
           className={buttonVariants({
             variant: "link",
-            className: "!text-2xl",
+            className: "text-lg md:!text-xl lg:!text-2xl",
           })}
         >
           VIEW CASE STUDY
@@ -54,8 +61,8 @@ export const Portfolio: FC<TPortfolio & { index: number }> = ({
       </div>
       <div
         className={cn(
-          "h-[70vh] relative",
-          index % 2 === 0 ? "order-2" : "order-1"
+          "h-[35vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] relative rounded-xl overflow-hidden",
+          index % 2 === 0 ? "lg:order-2" : "lg:order-1"
         )}
       >
         <Image src={img} alt={title} fill />

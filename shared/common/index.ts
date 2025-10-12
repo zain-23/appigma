@@ -20,3 +20,4 @@ export * from "./Icon";
 export * from "./Cta";
 export * from "./Award";
 export * from "./Faq";
+export * from "./Sheet";

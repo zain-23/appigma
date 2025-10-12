@@ -7,7 +7,7 @@ export const SectionWrapper: FC<HTMLAttributes<HTMLDivElement>> = ({
   ...props
 }) => {
   return (
-    <section className={cn("py-20", className)} {...props}>
+    <section className={cn("md:py-20 py-10", className)} {...props}>
       {children}
     </section>
   );
