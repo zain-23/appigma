@@ -4,25 +4,32 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <SectionWrapper className="h-[80vh] py-0">
+    <SectionWrapper className="h-[80vh]">
       <Container className="h-full">
-        <div className="grid grid-cols-12 gap-6 h-full items-center">
-          <div className="col-span-6 space-y-6">
-            <h2 className="text-6xl font-black">About TekRevol</h2>
-            <h2 className="text-lg leading-relaxed">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 h-full items-center">
+          <div className="col-span-1 lg:col-span-6 space-y-4 md:space-y-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold lg:font-black">
+              About TekRevol
+            </h2>
+            <p className="text-base md:text-lg leading-relaxed">
               TekRevol is an enterprise software development company helping
               startups and organizations build and implement digital
               transformation solutions tailored to their demand and needs.
-            </h2>
-            <ul className="grid grid-cols-2 list-disc gap-6 text-lg">
+            </p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 lg:gap-6 text-sm md:text-base lg:text-lg list-disc list-inside">
               <li className="col-span-1">Tech Integrated Solutions</li>
               <li className="col-span-1">Tech Integrated Solutions</li>
               <li className="col-span-1">Tech Integrated Solutions</li>
               <li className="col-span-1">Tech Integrated Solutions</li>
             </ul>
           </div>
-          <div className="col-span-6 relative h-[60%]">
-            <Image src={Aboutbg} alt="world" fill />
+          <div className="hidden lg:col-span-6 relative h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[60%] order-first lg:order-last">
+            <Image
+              src={Aboutbg}
+              alt="world"
+              fill
+              className="object-cover rounded-lg lg:rounded-none"
+            />
           </div>
         </div>
       </Container>

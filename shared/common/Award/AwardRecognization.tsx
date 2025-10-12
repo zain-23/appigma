@@ -17,23 +17,29 @@ export const AwardRecognization = () => {
   return (
     <SectionWrapper>
       <Container>
-        <div className="grid grid-cols-12">
-          <div className="space-y-6 col-span-6">
-            <h2 className="text-5xl font-black">Awards & Recognitions</h2>
-            <p className="leading-relaxed text-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8">
+          <div className="space-y-4 md:space-y-6 col-span-1 lg:col-span-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold lg:font-black">
+              Awards & Recognitions
+            </h2>
+            <p className="leading-relaxed text-base lg:text-lg">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Necessitatibus quia laborum beatae vero ipsa esse odio ab qui,
               enim modi dignissimos tempore vitae quidem aut voluptatum quae
               illum nihil! Quisquam. Odio ab qui, enim modi dignissimos tempore
               vitae quidem aut voluptatum quae illum nihil!
             </p>
-            <Button>Check Reviews</Button>
+            <Button className="w-full sm:w-auto">Check Reviews</Button>
           </div>
-          <div className="col-span-2" />
-          <div className="col-span-4 flex flex-col items-end">
-            <p className="text-primary text-2xl">75+ reviews on cluteh</p>
-            <h4 className="text-[12rem] leading-50 font-black">4.8</h4>
-            <Rating rating={5} className="size-10" />
+          <div className="hidden lg:block lg:col-span-2" />
+          <div className="col-span-1 lg:col-span-4 flex flex-col items-center lg:items-end space-y-3 md:space-y-4">
+            <p className="text-primary text-base md:text-lg lg:text-xl xl:text-2xl text-center lg:text-right">
+              75+ reviews on cluteh
+            </p>
+            <h4 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[12rem] leading-tight font-semibold lg:font-black">
+              4.8
+            </h4>
+            <Rating rating={5} className="size-6 md:size-8 lg:size-10" />
           </div>
         </div>
         <Carousel
@@ -42,19 +48,26 @@ export const AwardRecognization = () => {
               delay: 2000,
             }),
           ]}
-          className="mt-6"
+          className="mt-4 md:mt-6"
         >
-          <CarouselContent className="-ml-1 mt-10">
+          <CarouselContent className="-ml-2 md:-ml-4 mt-6 md:mt-8 lg:mt-10">
             {AWARDS.map(({ id, description, img, title }) => (
-              <CarouselItem key={id} className="basis-1/6 pl-4">
-                <div className="bg-muted rounded-2xl flex flex-col items-center justify-center group text-center p-4 space-y-2 h-80">
+              <CarouselItem
+                key={id}
+                className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6"
+              >
+                <div className="bg-muted rounded-xl md:rounded-2xl flex flex-col items-center justify-center group text-center p-3 md:p-4 space-y-2 h-48 md:h-64 lg:h-72 xl:h-80">
                   <Image
                     src={img}
                     alt={title}
-                    className="grayscale group-hover:grayscale-0 duration-300"
+                    className="grayscale group-hover:grayscale-0 duration-300 max-w-full h-auto"
                   />
-                  <h4 className="text-xl">{title}</h4>
-                  <p className="text-sm">{description}</p>
+                  <h4 className="text-sm md:text-base lg:text-lg xl:text-xl font-medium">
+                    {title}
+                  </h4>
+                  <p className="text-xs md:text-sm leading-relaxed">
+                    {description}
+                  </p>
                 </div>
               </CarouselItem>
             ))}
