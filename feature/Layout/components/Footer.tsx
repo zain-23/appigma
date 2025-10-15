@@ -30,7 +30,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pb-8 md:pb-10">
           <div className="col-span-1 space-y-3 md:space-y-4 lg:pr-6">
             <Logo variant="light" className="w-52 lg:w-auto" />
-            <p className="text-xs md:text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit nostrum obcaecati animi maxime saepe exercitationem
               delectus et velit eum, numquam sequi sint natus facere assumenda,

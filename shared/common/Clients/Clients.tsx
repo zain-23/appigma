@@ -11,7 +11,7 @@ export const Clients = () => {
       <Container>
         <div className="space-y-4 md:space-y-6">
           <WatermarkContent frontText="Our Clients" backText="Clients" />
-          <p className="text-sm md:text-base lg:text-lg leading-relaxed">
+          <p className="text-base lg:text-lg leading-relaxed">
             We contribute to these partnership programs, supported by global
             technology experts. Partnering with industry leaders, we offer
             quality technology solutions that meet your business needs.
