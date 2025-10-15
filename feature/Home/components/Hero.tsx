@@ -1,14 +1,16 @@
+"use client";
 import {
   Button,
-  buttonVariants,
   Container,
+  MagneticButton,
   SectionWrapper,
 } from "@/shared/common";
-import Link from "next/link";
-
+import { ArrowUpRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 export const Hero = () => {
+  const router = useRouter();
   return (
-    <SectionWrapper className="h-[80vh] lg:h-[90vh] py-0 relative after:content-[''] after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-foreground after:opacity-65 after:z-[-1]">
+    <SectionWrapper className="h-[95vh] py-0 relative after:content-[''] after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-foreground after:opacity-65 after:z-[-1]">
       {/* Background Video */}
       <video
         src="https://bfd6tumtbx.ufs.sh/f/LxNvt5anRP0UrnQQUAklLVYnWKPF0ajmzq6T9xyiUAQkhJBr"
@@ -19,23 +21,33 @@ export const Hero = () => {
       />
 
       <Container className="h-full">
-        <div className="flex justify-center lg:items-center items-start lg:text-center flex-col space-y-4 md:space-y-6 h-full max-w-5xl mx-auto text-background">
+        <div className="flex justify-center items-start flex-col space-y-4 md:space-y-6 h-full max-w-4xl mx-auto text-background">
           <p className="text-lg lg:text-xl">Digital Transformation Company</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
-            We are a Software Development Company
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight">
+            We are a <span className="text-primary">Software Development</span>{" "}
+            Company
           </h2>
-          <p className="text-lg lg:text-xl">
-            From adaption to expansion, we are your partners throughou.
+          <p className="text-lg lg:text-xl leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            eius laudantium quos nemo cupiditate, cum ab nulla eveniet corporis
+            cumque nisi numquam quisquam neque odit, impedit soluta.
+            Accusantium, pariatur error.
           </p>
-          <Link
-            href={"/contact-us"}
-            className={buttonVariants({
-              className:
-                "h-10 md:h-12 px-6 md:px-8 !rounded-full text-base md:!text-lg",
-            })}
-          >
-            Schedule a Call
-          </Link>
+          <div className="flex justify-between w-full">
+            <Button
+              className={"lg:invisible visible"}
+              onClick={() => router.push("/contact-us")}
+            >
+              Let's Discuss
+            </Button>
+            <MagneticButton
+              onClick={() => router.push("/contact-us")}
+              className="w-40 hidden h-40 bg-primary rounded-full lg:flex justify-center gap-2 flex-col items-center text-foreground text-lg text-center font-semibold"
+            >
+              <ArrowUpRight size={30} />
+              Let's Discuss Your Idea
+            </MagneticButton>
+          </div>
         </div>
       </Container>
     </SectionWrapper>

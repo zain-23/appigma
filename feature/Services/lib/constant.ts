@@ -373,4 +373,264 @@ export const SERVICES = {
       bgImg: innovationBgImg,
     },
   },
+  "mobile-application-development": {
+    path: "/services/ai-development",
+    heroSection: {
+      title: "AI Development Services",
+      description:
+        "Tekrevol is a renowned AI development services company in the USA, trusted worldwide for its automation solutions. We develop artificial intelligence software and apps for businesses of all sizes to discard manual processes. Our AI solutions are designed to streamline workflows and augment operations for measurable results without unnecessary delays.",
+      btnContent: "Talk To Your AI Consultant",
+      heroBgImg: aiAutomationBgImage,
+    },
+    trustedBrands: {
+      title: "Trusted by the Top Brands",
+      logo: BRANDS,
+    },
+    demand: {
+      title: "AI Development Services Built for the Demands of Tomorrow",
+      para: "AI is no longer optional for growth, and our custom artificial intelligence services reflect this momentum. At TekRevol, we help businesses adapt to future changes through:",
+      demands: [
+        {
+          id: 1,
+          data: "$500,000",
+          description:
+            "saved annually by reducing costs through intelligent automation",
+        },
+        {
+          id: 2,
+          data: "25%",
+          description:
+            "faster workflows, eliminating delays and inefficiencies",
+        },
+        {
+          id: 3,
+          data: "40%",
+          description: "quicker decision-making using AI-driven insights",
+        },
+        {
+          id: 4,
+          data: "15%",
+          description:
+            "revenue growth through personalized AI-powered customer experiences",
+        },
+      ],
+      bgImg: demandBgImage,
+    },
+    servies: {
+      title: "Our Artificial Intelligence Development Services",
+      data: [
+        {
+          id: 1,
+          title: "AI App Development",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 2,
+          title: "Custom AI Software Development",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 3,
+          title: "Generative AI Development Services",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 4,
+          title: "AI Agent Solutions",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 5,
+          title: "Enterprise AI Solution",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 6,
+          title: "AI Consulting Services",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 7,
+          title: "Machine Learning Models",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 8,
+          title: "AI System Integration & Optimization",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+      ],
+    },
+    expertise: {
+      title: "We Have Mastered Every AI Model",
+      stack: AI_STACK,
+      bgImg: expertiseBgImg,
+    },
+    multiDomain: {
+      title:
+        "TekRevol: The Only Artificial Intelligence Development Company With Multi-Domain Expertise",
+      description:
+        "Holding the status of a top Artificial Intelligence development company, our core expertise isn’t just about offering AI services. We excel in the areas that matter most for impact and scalability. Instead of a broad checklist, we bring unmatched depth and specialization into:",
+      data: MULTI_DOMAIN_SERVICES,
+    },
+    leading_business: {
+      title:
+        "Join the List of Leading Businesses Using AI to Streamline Operations and Accelerate Growth",
+      description:
+        "Our artificial intelligence solutions help businesses operate more efficiently and make decisions faster. See how companies are benefiting from smarter workflows and tangible growth with TekRevol.",
+      btnContent: "Get Your Free AI Consultation Today",
+      bgImg: readyAICtaBgImg,
+    },
+    powered_solution: {
+      title: "Our AI-Powered Solutions Are Changing Every Industry",
+      description:
+        "At Tekrevol, we meet the artificial intelligence solution requirements of multiple industries. Our custom AI software development services help businesses adopt AI technologies to solve their industry-specific challenges.",
+      industry: INDUSTRY,
+    },
+    innovation: {
+      title: "Take the Next Step Toward AI-Drive Innovation With Appigma",
+      description:
+        "Reserve a free 30-minute consultation with our AI experts. See how our solutions can streamline processes, boost revenue, and align with your business goals.",
+      btnContent: "Schedule Your Free Consultation Call",
+      bgImg: innovationBgImg,
+    },
+  },
+  "web-application-development": {
+    path: "/services/ai-development",
+    heroSection: {
+      title: "AI Development Services",
+      description:
+        "Tekrevol is a renowned AI development services company in the USA, trusted worldwide for its automation solutions. We develop artificial intelligence software and apps for businesses of all sizes to discard manual processes. Our AI solutions are designed to streamline workflows and augment operations for measurable results without unnecessary delays.",
+      btnContent: "Talk To Your AI Consultant",
+      heroBgImg: aiAutomationBgImage,
+    },
+    trustedBrands: {
+      title: "Trusted by the Top Brands",
+      logo: BRANDS,
+    },
+    demand: {
+      title: "AI Development Services Built for the Demands of Tomorrow",
+      para: "AI is no longer optional for growth, and our custom artificial intelligence services reflect this momentum. At TekRevol, we help businesses adapt to future changes through:",
+      demands: [
+        {
+          id: 1,
+          data: "$500,000",
+          description:
+            "saved annually by reducing costs through intelligent automation",
+        },
+        {
+          id: 2,
+          data: "25%",
+          description:
+            "faster workflows, eliminating delays and inefficiencies",
+        },
+        {
+          id: 3,
+          data: "40%",
+          description: "quicker decision-making using AI-driven insights",
+        },
+        {
+          id: 4,
+          data: "15%",
+          description:
+            "revenue growth through personalized AI-powered customer experiences",
+        },
+      ],
+      bgImg: demandBgImage,
+    },
+    servies: {
+      title: "Our Artificial Intelligence Development Services",
+      data: [
+        {
+          id: 1,
+          title: "AI App Development",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 2,
+          title: "Custom AI Software Development",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 3,
+          title: "Generative AI Development Services",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 4,
+          title: "AI Agent Solutions",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 5,
+          title: "Enterprise AI Solution",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 6,
+          title: "AI Consulting Services",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 7,
+          title: "Machine Learning Models",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+        {
+          id: 8,
+          title: "AI System Integration & Optimization",
+          description:
+            "We develop secure and scalable AI apps for task automation and data processing. Backed by proven expertise, our AI app development services bring speed and accuracy to day-to-day tasks.",
+        },
+      ],
+    },
+    expertise: {
+      title: "We Have Mastered Every AI Model",
+      stack: AI_STACK,
+      bgImg: expertiseBgImg,
+    },
+    multiDomain: {
+      title:
+        "TekRevol: The Only Artificial Intelligence Development Company With Multi-Domain Expertise",
+      description:
+        "Holding the status of a top Artificial Intelligence development company, our core expertise isn’t just about offering AI services. We excel in the areas that matter most for impact and scalability. Instead of a broad checklist, we bring unmatched depth and specialization into:",
+      data: MULTI_DOMAIN_SERVICES,
+    },
+    leading_business: {
+      title:
+        "Join the List of Leading Businesses Using AI to Streamline Operations and Accelerate Growth",
+      description:
+        "Our artificial intelligence solutions help businesses operate more efficiently and make decisions faster. See how companies are benefiting from smarter workflows and tangible growth with TekRevol.",
+      btnContent: "Get Your Free AI Consultation Today",
+      bgImg: readyAICtaBgImg,
+    },
+    powered_solution: {
+      title: "Our AI-Powered Solutions Are Changing Every Industry",
+      description:
+        "At Tekrevol, we meet the artificial intelligence solution requirements of multiple industries. Our custom AI software development services help businesses adopt AI technologies to solve their industry-specific challenges.",
+      industry: INDUSTRY,
+    },
+    innovation: {
+      title: "Take the Next Step Toward AI-Drive Innovation With Appigma",
+      description:
+        "Reserve a free 30-minute consultation with our AI experts. See how our solutions can streamline processes, boost revenue, and align with your business goals.",
+      btnContent: "Schedule Your Free Consultation Call",
+      bgImg: innovationBgImg,
+    },
+  },
 };

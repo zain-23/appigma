@@ -1,5 +1,5 @@
 import { Container, SectionWrapper } from "@/shared/common";
-import Aboutbg from "../../../public/assets/about-us/about-bg.png";
+import Aboutbg from "../../../public/assets/about-us/bannerabout.png";
 import Image from "next/image";
 
 export const Hero = () => {
@@ -7,9 +7,9 @@ export const Hero = () => {
     <SectionWrapper className="h-[80vh]">
       <Container className="h-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 h-full items-center">
-          <div className="col-span-1 lg:col-span-6 space-y-4 md:space-y-6">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold lg:font-black">
-              About TekRevol
+          <div className="col-span-1 lg:col-span-5 space-y-4 md:space-y-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold lg:font-black">
+              About Appigma
             </h2>
             <p className="text-base md:text-lg leading-relaxed">
               TekRevol is an enterprise software development company helping
@@ -23,7 +23,7 @@ export const Hero = () => {
               <li className="col-span-1">Tech Integrated Solutions</li>
             </ul>
           </div>
-          <div className="hidden lg:col-span-6 relative h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[60%] order-first lg:order-last">
+          <div className="lg:block hidden col-span-7 relative h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[60%] order-first lg:order-last">
             <Image
               src={Aboutbg}
               alt="world"

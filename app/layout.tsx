@@ -2,6 +2,8 @@ import { Footer, Navbar } from "@/feature/Layout/components";
 import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
+import { QueryProvider } from "@/shared/provider";
+import { Toaster } from "@/shared/common";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,9 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className}`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <QueryProvider>
+          <Toaster richColors />
+          <Navbar />
+          {children}
+          <Footer />
+        </QueryProvider>
       </body>
     </html>
   );

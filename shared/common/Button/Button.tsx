@@ -39,6 +39,7 @@ function Button({
   variant,
   size,
   asChild = false,
+  children,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
@@ -46,12 +47,34 @@ function Button({
   }) {
   const Comp = asChild ? Slot : "button";
 
+  if (asChild) {
+    return (
+      <Comp
+        data-slot="button"
+        className={cn(buttonVariants({ variant, size, className }))}
+        {...props}
+      >
+        {children}
+      </Comp>
+    );
+  }
+
   return (
     <Comp
       data-slot="button"
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(
+        buttonVariants({ variant, size, className }),
+        "relative overflow-hidden group"
+      )}
       {...props}
-    />
+    >
+      <span className="inline-flex items-center justify-center gap-2 transition-transform duration-300 ease-out group-hover:-translate-y-[200%]">
+        {children}
+      </span>
+      <span className="absolute inset-0 inline-flex items-center justify-center gap-2 translate-y-[200%] transition-transform duration-300 ease-out group-hover:translate-y-0">
+        {children}
+      </span>
+    </Comp>
   );
 }
 

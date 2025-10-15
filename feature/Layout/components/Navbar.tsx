@@ -1,6 +1,7 @@
 "use client";
 import { NAVBAR } from "@/feature/Layout/lib";
 import {
+  Button,
   buttonVariants,
   Container,
   Logo,
@@ -14,11 +15,12 @@ import {
 import { cn } from "@/shared/lib";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { MobileMenu } from "./MobileMenu";
 
 export const Navbar = () => {
+  const router = useRouter();
   const [scroll, setScroll] = useState(false);
   const pathname = usePathname();
   const { scrollY } = useScroll();
@@ -102,17 +104,12 @@ export const Navbar = () => {
 
           {/* Right Side Actions */}
           <div className="flex items-center gap-4">
-            <Link
-              href={"/contact-us"}
-              className={cn(
-                buttonVariants({
-                  className: "h-12 px-8",
-                }),
-                "hidden lg:flex text-lg rounded-full"
-              )}
+            <Button
+              onClick={() => router.push("/contact-us")}
+              className="h-12 px-8 hidden lg:flex text-base rounded-full"
             >
               Contact us
-            </Link>
+            </Button>
 
             {/* Mobile Menu */}
             <MobileMenu scroll={scroll} pathname={pathname} />

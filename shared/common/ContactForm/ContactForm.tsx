@@ -15,13 +15,32 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { contactForm, TContactForm } from "../../../feature/Contact/schema";
+import { useMutation } from "@tanstack/react-query";
+import { sendContactEmail } from "@/feature/Contact/actions";
+import { toast } from "sonner";
 
 export const ContactForm = () => {
   const form = useForm<TContactForm>({
     resolver: zodResolver(contactForm),
   });
 
-  const onSubmit = (values: TContactForm) => {};
+  const { mutate, isPending } = useMutation({
+    mutationFn: async (data: TContactForm) => {
+      const response = await sendContactEmail(data);
+      if (!response.success) {
+        toast.error(response.message);
+        return;
+      }
+      toast.success(response.message);
+    },
+    onError: (error) => {
+      toast.error(error.message);
+    },
+  });
+
+  const onSubmit = (values: TContactForm) => {
+    mutate(values);
+  };
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -81,7 +100,9 @@ export const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">Get In Touch</Button>
+        <Button type="submit" disabled={isPending}>
+          Get In Touch
+        </Button>
       </form>
     </Form>
   );

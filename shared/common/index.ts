@@ -21,3 +21,5 @@ export * from "./Cta";
 export * from "./Award";
 export * from "./Faq";
 export * from "./Sheet";
+export * from "./Sonner";
+export * from "./MagneticButton";
