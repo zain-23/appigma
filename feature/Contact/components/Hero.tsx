@@ -1,12 +1,10 @@
 import {
   Card,
   CardContent,
-  CardHeader,
-  CardTitle,
+  ContactForm,
   Container,
   SectionWrapper,
   WatermarkContent,
-  ContactForm,
 } from "@/shared/common";
 
 export const Hero = () => {
@@ -30,12 +28,10 @@ export const Hero = () => {
           </div>
           <div className="col-span-1 lg:col-span-4">
             <Card className="border-0 shadow-xl">
-              <CardHeader className="pb-4 md:pb-6">
-                <CardTitle className="text-2xl sm:text-3xl font-black">
+              <CardContent className="space-y-6">
+                <h3 className="text-2xl sm:text-3xl font-semibold">
                   Book a Free <span className="text-primary">Consultation</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
+                </h3>
                 <ContactForm />
               </CardContent>
             </Card>

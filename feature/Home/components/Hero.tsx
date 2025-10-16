@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 export const Hero = () => {
   const router = useRouter();
   return (
-    <SectionWrapper className="h-[95vh] py-0 relative after:content-[''] after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-foreground after:opacity-65 after:z-[-1]">
+    <SectionWrapper className="h-screen py-0 relative after:content-[''] after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-foreground after:opacity-65 after:z-[-1]">
       {/* Background Video */}
       <video
         src="https://bfd6tumtbx.ufs.sh/f/LxNvt5anRP0UrnQQUAklLVYnWKPF0ajmzq6T9xyiUAQkhJBr"
@@ -21,9 +21,8 @@ export const Hero = () => {
       />
 
       <Container className="h-full">
-        <div className="flex justify-center items-start flex-col space-y-4 md:space-y-6 h-full max-w-4xl mx-auto text-background">
-          <p className="text-lg lg:text-xl">Digital Transformation Company</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight">
+        <div className="flex justify-end items-start flex-col space-y-4 md:space-y-6 h-full max-w-4xl mx-auto text-background">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-semibold">
             We are a <span className="text-primary">Software Development</span>{" "}
             Company
           </h2>

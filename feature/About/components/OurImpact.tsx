@@ -15,7 +15,7 @@ export const OurImpact = () => {
             />
           </div>
           <div className="col-span-1 lg:col-span-7 space-y-4 md:space-y-6 pl-0 lg:pl-8 xl:pl-20">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold lg:font-black">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
               Our Impact
             </h2>
             <p className="text-base md:text-lg font-medium">

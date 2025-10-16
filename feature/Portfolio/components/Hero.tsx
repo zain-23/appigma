@@ -22,7 +22,7 @@ export const Hero = () => {
               backText="Get A Quote"
               className="absolute top-3 md:top-5 left-0 z-[-1]"
             />
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold lg:font-black leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
               Passion-Fueled Innovation: Where Dreams Become Reality
             </h2>
             <p className="text-base lg:text-lg leading-relaxed md:leading-loose">
@@ -41,12 +41,10 @@ export const Hero = () => {
           </div>
           <div className="col-span-1 lg:col-span-4">
             <Card className="border-0 shadow-xl">
-              <CardHeader className="pb-4 md:pb-6">
-                <CardTitle className="text-2xl sm:text-3xl font-semibold lg:font-black leading-tight">
+              <CardContent className="space-y-6">
+                <h3 className="text-2xl sm:text-3xl font-semibold">
                   Book a Free <span className="text-primary">Consultation</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
+                </h3>
                 <ContactForm />
               </CardContent>
             </Card>

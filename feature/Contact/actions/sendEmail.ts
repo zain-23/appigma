@@ -14,7 +14,7 @@ export async function sendContactEmail(data: TContactForm) {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 587,
-      secure: false, // Use STARTTLS for port 587
+      secure: Number(process.env.SMTP_PORT) === 465, // true for 465, false for other ports
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASSWORD,
@@ -40,8 +40,7 @@ export async function sendContactEmail(data: TContactForm) {
       replyTo: validatedData.email,
     });
 
-    console.log("Message sent: %s", info.messageId);
-
+    transporter.close();
     return {
       success: true,
       message: "Email sent successfully!",

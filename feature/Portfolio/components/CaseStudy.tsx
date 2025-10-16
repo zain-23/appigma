@@ -4,7 +4,7 @@ export const CaseStudy = () => {
   return (
     <SectionWrapper className="bg-muted">
       <Container className="space-y-4 md:space-y-6">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold lg:font-black">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
           Case Study
         </h2>
         <p className="text-base lg:text-lg leading-relaxed max-w-5xl">
