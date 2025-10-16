@@ -13,7 +13,7 @@ export const Hero = () => {
       <Container className="h-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 h-full gap-6 md:gap-8 items-center">
           <div className="col-span-1 lg:col-span-8 space-y-4 md:space-y-6 relative pr-0 lg:pr-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold lg:font-black">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
               Let&apos;s start a project together
             </h2>
             <p className="text-base lg:text-lg leading-relaxed md:leading-loose">

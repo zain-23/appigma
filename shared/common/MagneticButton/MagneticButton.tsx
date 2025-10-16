@@ -7,64 +7,58 @@ import { useRef } from "react";
 interface MagneticButtonProps {
   children: React.ReactNode;
   className?: string;
-  magneticStrength?: number;
   onClick?: () => void;
 }
 
 export const MagneticButton = ({
   children,
   className,
-  magneticStrength = 0.3,
   onClick,
 }: MagneticButtonProps) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const btnRef = useRef<HTMLButtonElement>(null);
 
-  const springX = useSpring(x, { stiffness: 150, damping: 15 });
-  const springY = useSpring(y, { stiffness: 150, damping: 15 });
+  const x = useSpring(0, { stiffness: 150, damping: 15 });
+  const y = useSpring(0, { stiffness: 150, damping: 15 });
 
-  const rotateX = useTransform(springY, [-0.5, 0.5], [15, -15]);
-  const rotateY = useTransform(springX, [-0.5, 0.5], [-15, 15]);
+  const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (!btnRef.current) return;
 
-  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (!ref.current) return;
+    const btn = btnRef.current;
+    const rect = btn.getBoundingClientRect();
+    const btnCenterX = rect.left + rect.width / 2;
+    const btnCenterY = rect.top + rect.height / 2;
 
-    const rect = ref.current.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
+    const distanceX = e.clientX - btnCenterX;
+    const distanceY = e.clientY - btnCenterY;
 
-    const distanceX = (event.clientX - centerX) / (rect.width / 2);
-    const distanceY = (event.clientY - centerY) / (rect.height / 2);
+    // Magnetic strength
+    const strength = 0.4;
+    const maxDistance = 100;
 
-    x.set(distanceX * magneticStrength);
-    y.set(distanceY * magneticStrength);
+    const distance = Math.sqrt(distanceX ** 2 + distanceY ** 2);
+
+    if (distance < maxDistance) {
+      x.set(distanceX * strength);
+      y.set(distanceY * strength);
+    }
   };
 
   const handleMouseLeave = () => {
     x.set(0);
     y.set(0);
   };
-
   return (
-    <motion.div
-      ref={ref}
-      className={cn("relative cursor-pointer", className)}
-      style={{
-        x: springX,
-        y: springY,
-        rotateX,
-        rotateY,
-        transformStyle: "preserve-3d",
-      }}
+    <motion.button
+      ref={btnRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      onClick={onClick}
+      style={{ x, y }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      onClick={onClick}
+      className={className}
     >
       {children}
-    </motion.div>
+    </motion.button>
   );
 };

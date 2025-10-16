@@ -41,7 +41,7 @@ export const Hero = () => {
             </Button>
             <MagneticButton
               onClick={() => router.push("/contact-us")}
-              className="w-40 hidden h-40 bg-primary rounded-full lg:flex justify-center gap-2 flex-col items-center text-foreground text-lg text-center font-semibold"
+              className="w-40 hidden h-40 bg-primary rounded-full lg:flex justify-center gap-2 flex-col items-center text-foreground text-lg text-center font-semibold cursor-pointer"
             >
               <ArrowUpRight size={30} />
               Let's Discuss Your Idea
