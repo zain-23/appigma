@@ -6,7 +6,7 @@ export * from "./Expertise";
 export * from "./CaseStudies";
 export * from "./Cta";
 export * from "./Journey";
-export * from "./Testimonial";
+export * from "../../../shared/common/Testimonial/Testimonial";
 export * from "./Technologies";
 export * from "./ServicesIcon";
 export * from "./ExpertiseIcon";

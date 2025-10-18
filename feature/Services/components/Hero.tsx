@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <SectionWrapper className="py-0 h-[80vh] relative">
+    <SectionWrapper className="py-0 h-screen relative">
       <Image
         src={heroImage}
         alt="AI Automation"

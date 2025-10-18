@@ -23,3 +23,8 @@ export * from "./Faq";
 export * from "./Sheet";
 export * from "./Sonner";
 export * from "./MagneticButton";
+export * from "./Testimonial";
+export * from "./Slider";
+export * from "./Dialog";
+export * from "./DelayedModal";
+export * from "./ModalForm";

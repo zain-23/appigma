@@ -7,19 +7,19 @@ import {
   Rating,
   SectionWrapper,
 } from "@/shared/common";
-import { TESTIMONIALS } from "../lib";
+import { TESTIMONIALS } from "../../../feature/Home/lib";
 import Image from "next/image";
 
 export const Testimonial = () => {
   return (
     <SectionWrapper className="bg-[radial-gradient(circle_at_right,_#004a2e_0%,_#001a0f_50%,_#000000_100%)]">
       <Container>
-        <div className="max-w-6xl mx-auto text-center space-y-4 md:space-y-6 text-background">
+        <div className="max-w-6xl mx-auto lg:text-center space-y-4 md:space-y-6 text-background">
           <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
             Our clients simply love{" "}
             <span className="text-pretty">what we do</span>
           </h2>
-          <p className="text-base md:text-lg lg:text-xl px-4 md:px-0">
+          <p className="text-base md:text-lg lg:text-xl">
             Proud to serve as the innovation partner for industry leaders who
             have experienced our expertise and excellence firsthand.
           </p>

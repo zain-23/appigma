@@ -1,4 +1,4 @@
-import { AwardRecognization, Faq } from "@/shared/common";
+import { AwardRecognization, Faq, Testimonial } from "@/shared/common";
 import {
   Demand,
   Expertise,
@@ -23,6 +23,7 @@ export const ServicePage = () => {
       <LeadingBusiness />
       <Industry />
       <Innovation />
+      <Testimonial />
       <AwardRecognization />
       <Faq />
     </>

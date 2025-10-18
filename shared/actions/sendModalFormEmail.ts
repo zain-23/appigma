@@ -1,16 +1,15 @@
 "use server";
-
-import { render } from "@react-email/components";
+import { modalFormSchema, TModalForm } from "@/shared/schemas";
+import { ModalFormEmail } from "@/shared/emails";
+import { render } from "@react-email/render";
 import nodemailer from "nodemailer";
-import { contactForm, TContactForm } from "../schema";
-import ContactFormEmail from "@/shared/emails/ContactFormEmail";
 
-export async function sendContactEmail(data: TContactForm) {
+export async function sendModalFormEmail(data: TModalForm) {
   try {
-    // Validate the form data
-    const validatedData = contactForm.parse(data);
+    // Validate the data
+    const validatedData = modalFormSchema.parse(data);
 
-    // Create a nodemailer transporter
+    // Create transporter (you can configure this based on your email service)
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 587,
@@ -21,31 +20,38 @@ export async function sendContactEmail(data: TContactForm) {
       },
     });
 
-    // Render the email template
+    // Render React Email component
     const emailHtml = await render(
-      ContactFormEmail({
+      ModalFormEmail({
         full_name: validatedData.full_name,
         email: validatedData.email,
         phone_number: validatedData.phone_number,
+        budget: validatedData.budget,
         description: validatedData.description,
       })
     );
 
-    // Send the email
-    const info = await transporter.sendMail({
+    // Send email
+    await transporter.sendMail({
       from: `"${process.env.EMAIL_FROM_NAME}" <${process.env.EMAIL_FROM_ADDRESS}>`,
-      to: process.env.EMAIL_FROM_NAME,
-      subject: `New Contact Form Submission from ${validatedData.full_name}`,
+      to: process.env.EMAIL_FROM_ADDRESS,
+      subject: `New Modal Form Submission - Appigma`,
       html: emailHtml,
     });
 
-    transporter.close();
     return {
       success: true,
-      message: "Email sent successfully!",
+      message: "Thank you for your submission! We'll get back to you soon.",
     };
   } catch (error) {
-    console.error("Error sending email:", error);
+    console.error("Error sending modal form email:", error);
+
+    if (error instanceof Error) {
+      return {
+        success: false,
+        message: error.message,
+      };
+    }
 
     return {
       success: false,

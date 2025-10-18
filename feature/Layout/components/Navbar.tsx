@@ -108,7 +108,7 @@ export const Navbar = () => {
               onClick={() => router.push("/contact-us")}
               className="h-12 px-8 hidden lg:flex text-base rounded-full"
             >
-              Contact us
+              Get in Touch
             </Button>
 
             {/* Mobile Menu */}

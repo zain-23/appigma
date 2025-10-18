@@ -17,10 +17,10 @@ export const MultiDomain = () => {
             {data.multiDomain.description}
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-8 md:mt-12 lg:mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 mt-8 md:mt-12 lg:mt-16">
           {data.multiDomain.data.map(({ description, icon, id, title }) => (
             <div
-              className="col-span-1 bg-muted p-4 md:p-6 min-h-[320px] md:min-h-[350px] lg:h-96 space-y-2 md:space-y-3 rounded-xl flex flex-col"
+              className="col-span-1 bg-muted p-4 md:p-6 min-h-[320px] md:min-h-[350px] lg:h-96 space-y-2 md:space-y-3 rounded-xl flex flex-col shadow-primary shadow-[0px_10px]"
               key={id}
             >
               <div className="bg-primary w-16 h-16 md:w-20 md:h-20 rounded-full font-semibold flex justify-center items-center [&>svg]:w-8 [&>svg]:h-8 md:[&>svg]:w-10 md:[&>svg]:h-10">

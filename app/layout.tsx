@@ -1,5 +1,5 @@
 import { Footer, Navbar, TextUs } from "@/feature/Layout/components";
-import { Toaster } from "@/shared/common";
+import { Toaster, DelayedModalWrapper } from "@/shared/common";
 import { QueryProvider } from "@/shared/provider";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -26,6 +26,7 @@ export default function RootLayout({
         <TextUs />
         <QueryProvider>
           <Toaster richColors />
+          <DelayedModalWrapper />
           <Navbar />
           {children}
           <Footer />

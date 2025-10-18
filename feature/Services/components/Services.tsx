@@ -14,10 +14,10 @@ export const Services = () => {
             {data.servies.title}
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 mt-6 md:mt-8 lg:mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-10 mt-6 md:mt-8 lg:mt-10">
           {data.servies.data.map(({ id, description, title }) => (
             <div
-              className="col-span-1 bg-background p-4 md:p-6 min-h-[280px] md:h-80 space-y-2 md:space-y-3 rounded-lg"
+              className="col-span-1 bg-background p-6 space-y-2 md:space-y-3 rounded-lg shadow-primary shadow-[0px_10px]"
               key={id}
             >
               <div className="bg-primary w-10 h-10 md:w-12 md:h-12 rounded-full font-semibold flex justify-center items-center text-sm md:text-base">

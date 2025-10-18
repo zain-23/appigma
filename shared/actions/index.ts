@@ -1,0 +1,1 @@
+export { sendModalFormEmail } from "./sendModalFormEmail";
