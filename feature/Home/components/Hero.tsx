@@ -21,7 +21,7 @@ export const Hero = () => {
       />
 
       <Container className="h-full">
-        <div className="flex justify-end items-start flex-col space-y-4 md:space-y-6 h-full max-w-4xl mx-auto text-background">
+        <div className="flex lg:justify-end justify-center items-start flex-col space-y-4 md:space-y-6 h-full max-w-4xl mx-auto text-background">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-semibold">
             We are a <span className="text-primary">Software Development</span>{" "}
             Company

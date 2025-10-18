@@ -26,6 +26,11 @@ import model12 from "../../../public/assets/services/ai/vicuna.svg";
 import readyAICtaBgImg from "../../../public/assets/services/ai/ready-ai-cta.webp";
 import innovationBgImg from "../../../public/assets/services/ai/ai-journey-cta.webp";
 import { Icon } from "../components";
+// Portoflio
+import portfolioLogo1 from "../../../public/assets/services/portfolio/reckn.webp";
+import portfolio1 from "../../../public/assets/services/portfolio/reckn_img.webp";
+import portfolioLogo2 from "../../../public/assets/services/portfolio/pure_plank_logo.webp";
+import portfolio2 from "../../../public/assets/services/portfolio/pure_plank_img.webp";
 
 const BRANDS = [
   {
@@ -372,6 +377,55 @@ export const SERVICES = {
       btnContent: "Schedule Your Free Consultation Call",
       bgImg: innovationBgImg,
     },
+    portoflio: {
+      title: "Apps That Drive Impact: Our Development Portfolio",
+      description:
+        "As a leading mobile application development company, we take immense pride in a portfolio shaped by impactful solutions that drive measurable success.",
+      portoflios: [
+        {
+          id: 1,
+          logo: portfolioLogo1,
+          title:
+            "Bridging the Gap between Local Residents Leveraging Real-time Locations",
+          details: [
+            {
+              id: 1,
+              title: "ROI Growth",
+              rate: "35%",
+            },
+            {
+              id: 2,
+              title: "Growth in conversion rates",
+              rate: "35%",
+            },
+          ],
+          bgColor: "bg-[#4041ab]",
+          img: portfolio1,
+          slug: "/test",
+        },
+        {
+          id: 2,
+          logo: portfolioLogo2,
+          title:
+            "Bridging the Gap between Local Residents Leveraging Real-time Locations",
+          details: [
+            {
+              id: 1,
+              title: "ROI Growth",
+              rate: "35%",
+            },
+            {
+              id: 2,
+              title: "Growth in conversion rates",
+              rate: "35%",
+            },
+          ],
+          img: portfolio2,
+          bgColor: "bg-[#4041ab]",
+          slug: "/test",
+        },
+      ],
+    },
   },
   "mobile-application-development": {
     path: "/services/ai-development",
@@ -502,6 +556,55 @@ export const SERVICES = {
       btnContent: "Schedule Your Free Consultation Call",
       bgImg: innovationBgImg,
     },
+    portoflio: {
+      title: "Apps That Drive Impact: Our Development Portfolio",
+      description:
+        "As a leading mobile application development company, we take immense pride in a portfolio shaped by impactful solutions that drive measurable success.",
+      portoflios: [
+        {
+          id: 1,
+          logo: portfolioLogo1,
+          title:
+            "Bridging the Gap between Local Residents Leveraging Real-time Locations",
+          details: [
+            {
+              id: 1,
+              title: "ROI Growth",
+              rate: "35%",
+            },
+            {
+              id: 2,
+              title: "Growth in conversion rates",
+              rate: "35%",
+            },
+          ],
+          img: portfolio1,
+          bgColor: "bg-[#4041ab]",
+          slug: "/test",
+        },
+        {
+          id: 2,
+          logo: portfolioLogo2,
+          title:
+            "Bridging the Gap between Local Residents Leveraging Real-time Locations",
+          details: [
+            {
+              id: 1,
+              title: "ROI Growth",
+              rate: "35%",
+            },
+            {
+              id: 2,
+              title: "Growth in conversion rates",
+              rate: "35%",
+            },
+          ],
+          img: portfolio2,
+          bgColor: "bg-[#4041ab]",
+          slug: "/test",
+        },
+      ],
+    },
   },
   "web-application-development": {
     path: "/services/ai-development",
@@ -631,6 +734,55 @@ export const SERVICES = {
         "Reserve a free 30-minute consultation with our AI experts. See how our solutions can streamline processes, boost revenue, and align with your business goals.",
       btnContent: "Schedule Your Free Consultation Call",
       bgImg: innovationBgImg,
+    },
+    portoflio: {
+      title: "Apps That Drive Impact: Our Development Portfolio",
+      description:
+        "As a leading mobile application development company, we take immense pride in a portfolio shaped by impactful solutions that drive measurable success.",
+      portoflios: [
+        {
+          id: 1,
+          logo: portfolioLogo1,
+          title:
+            "Bridging the Gap between Local Residents Leveraging Real-time Locations",
+          details: [
+            {
+              id: 1,
+              title: "ROI Growth",
+              rate: "35%",
+            },
+            {
+              id: 2,
+              title: "Growth in conversion rates",
+              rate: "35%",
+            },
+          ],
+          img: portfolio1,
+          bgColor: "bg-[#4041ab]",
+          slug: "/test",
+        },
+        {
+          id: 2,
+          logo: portfolioLogo2,
+          title:
+            "Bridging the Gap between Local Residents Leveraging Real-time Locations",
+          details: [
+            {
+              id: 1,
+              title: "ROI Growth",
+              rate: "35%",
+            },
+            {
+              id: 2,
+              title: "Growth in conversion rates",
+              rate: "35%",
+            },
+          ],
+          img: portfolio2,
+          bgColor: "bg-[#4041ab]",
+          slug: "/test",
+        },
+      ],
     },
   },
 };

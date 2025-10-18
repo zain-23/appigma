@@ -7,6 +7,7 @@ import {
   Innovation,
   LeadingBusiness,
   MultiDomain,
+  Portfolio,
   Services,
   TopBrand,
 } from "../components";
@@ -21,6 +22,7 @@ export const ServicePage = () => {
       <Expertise />
       <MultiDomain />
       <LeadingBusiness />
+      <Portfolio />
       <Industry />
       <Innovation />
       <Testimonial />
