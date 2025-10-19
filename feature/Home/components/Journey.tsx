@@ -5,11 +5,11 @@ export const Journey = () => {
   return (
     <SectionWrapper>
       <Container>
-        <div className="flex flex-col justify-center items-center text-center space-y-4 md:space-y-6 lg:space-y-8 max-w-5xl mx-auto relative pb-8 md:pb-10">
+        <div className="flex flex-col justify-center items-center lg:text-center space-y-4 md:space-y-6 lg:space-y-8 max-w-5xl mx-auto relative pb-8 md:pb-10">
           <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
             Our journey of building success
           </h2>
-          <p className="text-base md:text-lg lg:text-xl leading-relaxed px-4 md:px-0">
+          <p className="text-base md:text-lg lg:text-xl leading-relaxed">
             We thrive on accelerating the path to disruption and implementing
             agile methodologies to design, build, deliver, and scale digital
             solutions. Our future-proof, growth-centric tech has earned us

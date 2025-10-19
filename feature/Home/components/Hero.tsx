@@ -22,15 +22,18 @@ export const Hero = () => {
 
       <Container className="h-full">
         <div className="flex lg:justify-end justify-center items-start flex-col space-y-4 md:space-y-6 h-full max-w-4xl mx-auto text-background">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-semibold">
-            We are a <span className="text-primary">Software Development</span>{" "}
-            Company
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold flex flex-col gap-y-2">
+            <span>
+              {" "}
+              We are a <span className="text-primary">Software </span>
+            </span>
+            <span className="text-primary">Development</span>
+            <span>Company</span>
           </h2>
-          <p className="text-lg lg:text-xl leading-relaxed">
+          <p className="text-lg leading-relaxed">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
             eius laudantium quos nemo cupiditate, cum ab nulla eveniet corporis
-            cumque nisi numquam quisquam neque odit, impedit soluta.
-            Accusantium, pariatur error.
+            cumque nisi numquam quisquam neque odit,
           </p>
           <div className="flex justify-between w-full">
             <Button

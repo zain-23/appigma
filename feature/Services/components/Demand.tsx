@@ -16,7 +16,7 @@ export const Demand = () => {
           fill
           className="object-cover z-[-1]"
         />
-        <div className="max-w-4xl mx-auto space-y-4 md:space-y-6 text-center px-4">
+        <div className="max-w-4xl mx-auto space-y-4 md:space-y-6 lg:text-center px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
             {data.demand.title}
           </h2>

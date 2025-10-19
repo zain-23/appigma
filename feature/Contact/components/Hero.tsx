@@ -1,4 +1,5 @@
 import {
+  Breadcrumb,
   Card,
   CardContent,
   ContactForm,
@@ -11,6 +12,7 @@ export const Hero = () => {
   return (
     <SectionWrapper className="lg:py-0 py-28 lg:h-screen">
       <Container className="h-full">
+        <Breadcrumb />
         <div className="grid grid-cols-1 lg:grid-cols-12 h-full gap-6 md:gap-8 items-center">
           <div className="col-span-1 lg:col-span-8 space-y-4 md:space-y-6 relative pr-0 lg:pr-8">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
@@ -27,9 +29,9 @@ export const Hero = () => {
             />
           </div>
           <div className="col-span-1 lg:col-span-4">
-            <Card className="border-0 shadow-xl">
+            <Card className="shadow-xl">
               <CardContent className="space-y-6">
-                <h3 className="text-2xl sm:text-3xl font-semibold">
+                <h3 className="text-2xl font-semibold">
                   Book a Free <span className="text-primary">Consultation</span>
                 </h3>
                 <ContactForm />

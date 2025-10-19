@@ -43,7 +43,10 @@ export const MobileMenu = ({ scroll, pathname }: MobileMenuProps) => {
       >
         <Menu className="w-6 h-6" />
       </SheetTrigger>
-      <SheetContent side="right" className="w-[320px] sm:w-[400px] p-0">
+      <SheetContent
+        side="right"
+        className="w-[320px] sm:w-[400px] p-0 h-screen"
+      >
         {/* Header with Logo and Close Button */}
         <div className="flex items-center justify-between px-4 py-6 border-b border-border/50">
           <Logo width={80} height={40} className="h-8 w-auto" />
@@ -104,15 +107,6 @@ export const MobileMenu = ({ scroll, pathname }: MobileMenuProps) => {
                 </Link>
               );
             })}
-            <Link
-              href={"/contact-us"}
-              className={cn(
-                "py-4 px-3 text-lg font-semibold hover:text-primary transition-colors rounded-lg hover:bg-accent/50",
-                pathname === "/contact-us" && "text-primary bg-primary/10"
-              )}
-            >
-              Contact us
-            </Link>
           </nav>
         </div>
 

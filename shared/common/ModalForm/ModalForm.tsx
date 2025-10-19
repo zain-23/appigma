@@ -141,7 +141,7 @@ export const ModalForm = () => {
               <FormControl>
                 <textarea
                   {...field}
-                  className="outline-0 border-b-2 border-primary text-lg sm:text-xl pb-2 w-full min-h-[100px] sm:min-h-[120px]"
+                  className="outline-0 border-b-2 border-primary text-lg sm:text-xl w-full min-h-[20px]"
                   placeholder="Project Brief"
                 />
               </FormControl>

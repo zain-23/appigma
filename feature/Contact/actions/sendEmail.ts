@@ -34,7 +34,7 @@ export async function sendContactEmail(data: TContactForm) {
     // Send the email
     const info = await transporter.sendMail({
       from: `"${process.env.EMAIL_FROM_NAME}" <${process.env.EMAIL_FROM_ADDRESS}>`,
-      to: process.env.EMAIL_FROM_NAME,
+      to: process.env.EMAIL_FROM_ADDRESS,
       subject: `New Contact Form Submission from ${validatedData.full_name}`,
       html: emailHtml,
     });

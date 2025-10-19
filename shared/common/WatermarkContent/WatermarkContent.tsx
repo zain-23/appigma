@@ -26,7 +26,7 @@ export const WatermarkContent: FC<DualTextProps> = ({
       {/* Background watermark text */}
       <h2
         className={cn(
-          "text-[3rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] font-bold text-muted select-none pointer-events-none z-[-1] leading-[60px] sm:leading-[90px] md:leading-[120px] lg:leading-[150px]",
+          "text-[3rem] sm:text-[6rem] md:text-[8rem] lg:text-[7rem] font-bold text-muted select-none pointer-events-none z-[-1] leading-[60px] sm:leading-[90px] md:leading-[120px] lg:leading-[150px]",
           alignmentClasses
         )}
       >
@@ -40,8 +40,8 @@ export const WatermarkContent: FC<DualTextProps> = ({
           align === "center"
             ? "left-1/2 -translate-x-1/2"
             : align === "end"
-            ? "right-1 sm:right-2"
-            : "left-1 sm:left-2"
+              ? "right-1 sm:right-2"
+              : "left-1 sm:left-2"
         )}
       >
         {frontText}

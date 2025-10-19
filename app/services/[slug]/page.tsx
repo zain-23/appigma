@@ -1,6 +1,6 @@
 import { ServicePage } from "@/feature/Services/page";
 
-export default async function Servies({
+export default async function ServicesDetails({
   params,
 }: PageProps<"/services/[slug]">) {
   const { slug } = await params;

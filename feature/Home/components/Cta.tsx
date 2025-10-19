@@ -6,11 +6,11 @@ export const Cta = () => {
   return (
     <SectionWrapper>
       <Container>
-        <div className="px-4 md:px-6 lg:px-10 h-[55vh] lg:h-[65vh] bg-accent-foreground mt-4 md:mt-6 rounded-2xl md:rounded-3xl overflow-hidden relative flex items-center justify-start">
+        <div className="px-4 md:px-6 lg:px-10 h-[40vh] lg:h-[65vh] bg-accent-foreground mt-4 md:mt-6 rounded-2xl md:rounded-3xl overflow-hidden relative flex items-center justify-start">
           {/* Bg Image */}
           <Image
             src={Cta1}
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="absolute top-0 left-0 w-full h-full object-cover lg:block hidden"
             alt="ai-revolution"
             fill
           />

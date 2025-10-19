@@ -1,5 +1,5 @@
 import { Footer, Navbar, TextUs } from "@/feature/Layout/components";
-import { Toaster, DelayedModalWrapper } from "@/shared/common";
+import { DelayedModalWrapper, Toaster } from "@/shared/common";
 import { QueryProvider } from "@/shared/provider";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";

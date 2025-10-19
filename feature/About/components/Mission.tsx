@@ -53,7 +53,7 @@ export const Mission = () => {
               })}
             </div>
           </div>
-          <div className="col-span-1 lg:col-span-6 relative h-[40vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh] order-first lg:order-last">
+          <div className="col-span-1 lg:col-span-6 relative h-[40vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh]">
             <Image
               src={selectedTabImage}
               alt={selected}

@@ -9,11 +9,11 @@ export const Discover = () => {
         <h2 className="text-2xl md:text-4xl lg:text-6xl font-semibold">
           What&apos;s New at Appigma
         </h2>
-        <div className="px-4 md:px-6 lg:px-10 rounded-2xl md:rounded-3xl relative overflow-hidden h-[60vh] flex items-center">
+        <div className="px-4 py-6 md:px-6 lg:px-10 rounded-2xl md:rounded-3xl relative overflow-hidden lg:py-0 lg:h-[60vh] flex items-center bg-accent-foreground">
           {/* Bg Image */}
           <Image
             src={AiRevolution}
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="absolute lg:block hidden top-0 left-0 w-full h-full object-cover"
             alt="ai-revolution"
             fill
           />

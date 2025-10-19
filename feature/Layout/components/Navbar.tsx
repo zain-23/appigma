@@ -2,7 +2,6 @@
 import { NAVBAR } from "@/feature/Layout/lib";
 import {
   Button,
-  buttonVariants,
   Container,
   Logo,
   NavigationMenu,
@@ -18,6 +17,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { MobileMenu } from "./MobileMenu";
+import { MessageCircle } from "lucide-react";
 
 export const Navbar = () => {
   const router = useRouter();
@@ -41,7 +41,7 @@ export const Navbar = () => {
       )}
     >
       <Container>
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center lg:h-20 h-16">
           {/* Logo */}
           <Link href="/">
             <Logo
@@ -51,7 +51,7 @@ export const Navbar = () => {
                   ? "dark"
                   : "light"
               }
-              className="lg:w-80 md:w-60 w-44"
+              className="lg:w-80 md:w-60 w-40"
             />
           </Link>
 
@@ -110,7 +110,9 @@ export const Navbar = () => {
             >
               Get in Touch
             </Button>
-
+            <Link href={"/contact-us"} className="lg:hidden">
+              <MessageCircle className="fill-background" />
+            </Link>
             {/* Mobile Menu */}
             <MobileMenu scroll={scroll} pathname={pathname} />
           </div>

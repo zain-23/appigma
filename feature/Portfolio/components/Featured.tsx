@@ -13,7 +13,7 @@ import { FEATURED } from "../lib";
 
 export const Featured = () => {
   return (
-    <SectionWrapper className="border">
+    <SectionWrapper>
       <Container>
         <WatermarkContent
           frontText="We're Featured In"

@@ -22,6 +22,12 @@ import { toast } from "sonner";
 export const ContactForm = () => {
   const form = useForm<TContactForm>({
     resolver: zodResolver(contactForm),
+    defaultValues: {
+      description: "",
+      email: "",
+      full_name: "",
+      phone_number: "",
+    },
   });
 
   const { mutate, isPending } = useMutation({
@@ -32,6 +38,7 @@ export const ContactForm = () => {
         return;
       }
       toast.success(response.message);
+      form.reset();
     },
     onError: (error) => {
       toast.error(error.message);

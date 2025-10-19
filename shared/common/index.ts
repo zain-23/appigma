@@ -28,3 +28,4 @@ export * from "./Slider";
 export * from "./Dialog";
 export * from "./DelayedModal";
 export * from "./ModalForm";
+export * from "./Breadcrumb";

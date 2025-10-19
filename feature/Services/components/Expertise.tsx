@@ -17,7 +17,7 @@ export const Expertise = () => {
       />
 
       <Container>
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto lg:text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold lg:font-black leading-tight text-background">
             {data.expertise.title}
           </h2>
