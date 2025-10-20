@@ -6,7 +6,6 @@ export const Hero = () => {
   return (
     <SectionWrapper className="lg:h-screen lg:py-0 lg:pt-0 pt-24">
       <Container className="h-full">
-        <Breadcrumb />
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 h-full items-center">
           <div className="col-span-1 lg:col-span-5 space-y-4 md:space-y-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">

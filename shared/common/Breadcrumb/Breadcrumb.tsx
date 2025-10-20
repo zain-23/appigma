@@ -69,7 +69,7 @@ export const Breadcrumb = () => {
     pathname.includes("/service") || pathname.includes("/case-stud");
 
   return (
-    <Container className="px-0 absolute lg:top-32 top-16">
+    <Container className="px-0 absolute lg:top-36 top-20">
       <nav aria-label="Breadcrumb" className="py-3 md:py-4">
         <ol className="flex items-center space-x-2 text-sm md:text-base">
           {breadcrumbItems.map((item, index) => {
@@ -87,7 +87,7 @@ export const Breadcrumb = () => {
                 )}
                 {isLast ? (
                   <span
-                    className={`font-medium flex items-center ${
+                    className={`md:text-base text-[10px] flex items-center ${
                       isServicePage ? "text-background" : "text-gray-900"
                     }`}
                   >
@@ -97,13 +97,12 @@ export const Breadcrumb = () => {
                 ) : (
                   <Link
                     href={item.href}
-                    className={`transition-colors flex items-center ${
+                    className={`transition-colors md:text-base text-[10px] flex items-center ${
                       isServicePage
                         ? "text-background/80 hover:text-background"
                         : "text-gray-600 hover:text-primary"
                     }`}
                   >
-                    {isHome && <Home className="w-4 h-4 mr-1" />}
                     {item.label}
                   </Link>
                 )}

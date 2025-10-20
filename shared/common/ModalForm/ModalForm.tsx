@@ -62,7 +62,7 @@ export const ModalForm = () => {
                 <input
                   {...field}
                   type="text"
-                  className="outline-0 border-b-2 border-primary text-lg sm:text-xl pb-2 w-full"
+                  className="outline-0 border-b-2 border-primary lg:text-lg text-sm pb-2 w-full"
                   placeholder="Full Name"
                 />
               </FormControl>
@@ -79,7 +79,7 @@ export const ModalForm = () => {
                 <input
                   {...field}
                   type="email"
-                  className="outline-0 border-b-2 border-primary text-lg sm:text-xl pb-2 w-full"
+                  className="outline-0 border-b-2 border-primary lg:text-lg text-sm pb-2 w-full"
                   placeholder="Email Address"
                 />
               </FormControl>
@@ -96,7 +96,7 @@ export const ModalForm = () => {
                 <input
                   {...field}
                   type="tel"
-                  className="outline-0 border-b-2 border-primary text-lg sm:text-xl pb-2 w-full"
+                  className="outline-0 border-b-2 border-primary lg:text-lg text-sm pb-2 w-full"
                   placeholder="Phone Number"
                 />
               </FormControl>
@@ -109,7 +109,7 @@ export const ModalForm = () => {
           name="budget"
           render={({ field }) => (
             <FormItem className="gap-4 sm:gap-6">
-              <FormLabel className="text-lg sm:text-xl">Budget</FormLabel>
+              <FormLabel className="lg:text-lg text-sm">Budget</FormLabel>
               <FormControl>
                 <div className="space-y-4">
                   <Slider
@@ -141,7 +141,7 @@ export const ModalForm = () => {
               <FormControl>
                 <textarea
                   {...field}
-                  className="outline-0 border-b-2 border-primary text-lg sm:text-xl w-full min-h-[20px]"
+                  className="outline-0 border-b-2 border-primary lg:text-lg text-sm w-full min-h-[20px]"
                   placeholder="Project Brief"
                 />
               </FormControl>
@@ -151,7 +151,7 @@ export const ModalForm = () => {
         />
         <Button
           type="submit"
-          className="w-full sm:w-56 h-12 sm:h-14 text-lg sm:text-xl"
+          className="w-full sm:w-56 h-10 sm:h-14 text-base sm:text-xl"
           disabled={isPending}
         >
           Submit

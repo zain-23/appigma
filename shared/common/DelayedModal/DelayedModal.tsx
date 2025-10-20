@@ -16,27 +16,27 @@ interface DelayedModalProps {
 export const DelayedModal = ({ isOpen, onClose }: DelayedModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="!max-w-7xl max-h-[70vh] w-[95vw] overflow-y-auto lg:p-4 p-0 pt-10">
+      <DialogContent className="!max-w-7xl lg:max-h-[70vh] h-[90vh] w-[95vw] overflow-y-auto lg:p-4 p-0 pt-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 p-2 gap-4 lg:gap-8">
           {/* Left Panel - Promotional Content */}
-          <div className="rounded-3xl p-6 lg:p-8 flex-1 relative overflow-hidden col-span-1 lg:col-span-5 min-h-[300px] lg:min-h-[500px]">
+          <div className="rounded-3xl p-2 lg:p-8 flex-1 relative overflow-hidden col-span-1 lg:col-span-5 lg:min-h-[500px]">
             {/* Background Pattern */}
             <Image
               src={"/assets/hold-on-back.webp"}
               alt="hold-on-back"
-              className="object-cover"
+              className="object-cover lg:block hidden"
               fill
             />
 
             {/* Content */}
-            <div className="relative z-10 text-background space-y-4 lg:space-y-6">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary rounded-full flex items-center justify-center mb-4 lg:mb-6">
+            <div className="relative z-10 lg:text-background text-foreground space-y-4 lg:space-y-6">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary rounded-full lg:flex hidden items-center justify-center mb-4 lg:mb-6">
                 <span className="text-2xl sm:text-3xl">👋</span>
               </div>
-              <DialogTitle className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+              <DialogTitle className="text-xl sm:text-4xl lg:text-5xl font-bold leading-tight">
                 Hold On a Moment!
               </DialogTitle>
-              <DialogDescription className="text-base sm:text-lg text-background">
+              <DialogDescription className="text-sm sm:text-lg">
                 Book Your FREE strategy session to find out why 500+ successful
                 brands trust us for:
               </DialogDescription>
@@ -60,7 +60,7 @@ export const DelayedModal = ({ isOpen, onClose }: DelayedModalProps) => {
           </div>
 
           {/* Right Panel - Contact Form */}
-          <div className="col-span-1 lg:col-span-7 px-2 py-8">
+          <div className="col-span-1 lg:col-span-7 px-2 lg:py-8 py-4">
             <ModalForm />
           </div>
         </div>

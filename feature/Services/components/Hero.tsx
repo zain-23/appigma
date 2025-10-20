@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <SectionWrapper className="py-0 h-screen relative">
+    <SectionWrapper className="py-0 lg:h-screen h-[80vh] relative">
       <Image
         src={heroImage}
         alt="AI Automation"
@@ -23,7 +23,7 @@ export const Hero = () => {
             artificial intelligence software and apps for businesses of all
             sizes to discard manual processes.
           </p>
-          <Button size={"lg"} className="w-full sm:w-auto">
+          <Button size={"lg"} className="w-auto">
             Talk To Your AI Consultant
           </Button>
         </div>

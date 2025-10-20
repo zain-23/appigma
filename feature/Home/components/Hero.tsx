@@ -17,6 +17,11 @@ export const Hero = () => {
         loop
         autoPlay
         muted
+        playsInline
+        controls={false}
+        disablePictureInPicture
+        preload="metadata"
+        poster="/assets/video-poster.jpg"
         className="w-full h-full absolute top-0 left-0 object-cover z-[-2]"
       />
 
