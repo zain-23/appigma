@@ -10,7 +10,7 @@ import {
 
 export const Hero = () => {
   return (
-    <SectionWrapper className="lg:py-0 py-28 lg:h-screen">
+    <SectionWrapper className="lg:!py-40 lg:pb-0 py-36 pb-10">
       <Container className="h-full">
         <Breadcrumb />
         <div className="grid grid-cols-1 lg:grid-cols-12 h-full gap-6 md:gap-8 items-center">
