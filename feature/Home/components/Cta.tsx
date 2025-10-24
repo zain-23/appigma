@@ -1,6 +1,7 @@
 import { Button, Container, SectionWrapper } from "@/shared/common";
 import Cta1 from "../../../public/assets/cta-1.webp";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Cta = () => {
   return (
@@ -24,8 +25,8 @@ export const Cta = () => {
               high-performance solutions - on time, on brand, and beyond
               expectations.
             </p>
-            <Button variant={"secondary"} className="w-full sm:w-auto">
-              Talk To Our Innovators
+            <Button asChild variant={"secondary"} className="w-full sm:w-auto">
+              <Link href={"/contact-us"}>Talk To Our Innovators</Link>
             </Button>
           </div>
         </div>

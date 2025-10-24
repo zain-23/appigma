@@ -21,7 +21,7 @@ export const Footer = () => {
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold lg:font-bold">
               We're ready!
             </h2>
-            <Link href={"/contact-ud"} className={buttonVariants()}>
+            <Link href={"/contact-us"} className={buttonVariants()}>
               LET'S CONNECT!
             </Link>
           </div>

@@ -7,23 +7,39 @@ import {
 } from "@/shared/common";
 import { ArrowUpRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useEffect, useRef } from "react";
 export const Hero = () => {
   const router = useRouter();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Force play for safari
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((err) => {
+        console.error("ERROR PLAYING VIDEO", err);
+      });
+    }
+  }, []);
   return (
     <SectionWrapper className="h-screen py-0 relative after:content-[''] after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-foreground after:opacity-65 after:z-[-1]">
       {/* Background Video */}
       <video
-        src="https://bfd6tumtbx.ufs.sh/f/LxNvt5anRP0UrnQQUAklLVYnWKPF0ajmzq6T9xyiUAQkhJBr"
+        ref={videoRef}
         loop
         autoPlay
         muted
         playsInline
         controls={false}
         disablePictureInPicture
-        preload="metadata"
-        poster="/assets/video-poster.jpg"
+        webkit-playsinline="true"
+        preload="auto"
         className="w-full h-full absolute top-0 left-0 object-cover z-[-2]"
-      />
+      >
+        <source
+          src="https://bfd6tumtbx.ufs.sh/f/LxNvt5anRP0UrnQQUAklLVYnWKPF0ajmzq6T9xyiUAQkhJBr"
+          type="video/mp4"
+        />
+      </video>
 
       <Container className="h-full">
         <div className="flex lg:justify-end justify-center items-start flex-col space-y-4 md:space-y-6 h-full max-w-4xl mx-auto text-background">

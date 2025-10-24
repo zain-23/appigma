@@ -1,6 +1,7 @@
 import { Breadcrumb, Button, Container, SectionWrapper } from "@/shared/common";
 import heroImage from "../../../public/assets/services/ai/banner-ai.webp";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -23,8 +24,8 @@ export const Hero = () => {
             artificial intelligence software and apps for businesses of all
             sizes to discard manual processes.
           </p>
-          <Button size={"lg"} className="w-auto">
-            Talk To Your AI Consultant
+          <Button asChild size={"lg"} className="w-auto">
+            <Link href={"/contact-us"}>Talk To Your AI Consultant</Link>
           </Button>
         </div>
       </Container>

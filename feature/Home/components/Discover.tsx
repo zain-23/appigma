@@ -1,6 +1,7 @@
 import { Button, Container, SectionWrapper } from "@/shared/common";
 import AiRevolution from "../../../public/assets/ai-revolution.webp";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Discover = () => {
   return (
@@ -30,9 +31,11 @@ export const Discover = () => {
               built to empower your teams like never before
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-2">
-              <Button className="w-full sm:w-auto">Explore Rev AI</Button>
-              <Button variant={"outline"} className="w-full sm:w-auto">
-                Talk To Our Innovators
+              <Button asChild className="w-full sm:w-auto">
+                <Link href={"/services/ai-development"}>Explore Rev AI</Link>
+              </Button>
+              <Button asChild variant={"outline"} className="w-full sm:w-auto">
+                <Link href={"/contact-us"}>Talk To Our Innovators</Link>
               </Button>
             </div>
           </div>

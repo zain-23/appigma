@@ -29,7 +29,6 @@ export const AwardRecognization = () => {
               illum nihil! Quisquam. Odio ab qui, enim modi dignissimos tempore
               vitae quidem aut voluptatum quae illum nihil!
             </p>
-            <Button className="w-full sm:w-auto">Check Reviews</Button>
           </div>
           <div className="hidden lg:block lg:col-span-2" />
           <div className="col-span-1 lg:col-span-4 flex flex-col items-center lg:items-end space-y-3 md:space-y-4">

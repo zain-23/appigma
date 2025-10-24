@@ -1,5 +1,6 @@
 import { Button, Container, SectionWrapper } from "@/shared/common";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface LeadingBusinessProps {
   img: StaticImageData;
@@ -31,8 +32,8 @@ export const Cta = ({
           <p className="text-base lg:text-lg leading-relaxed md:leading-loose">
             {description}
           </p>
-          <Button size={"lg"} className="w-full sm:w-auto">
-            {btnText}
+          <Button asChild size={"lg"} className="w-full sm:w-auto">
+            <Link href={"/contact-us"}>{btnText}</Link>
           </Button>
         </div>
       </Container>
