@@ -4,6 +4,7 @@ import { QueryProvider } from "@/shared/provider";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { TawkChat } from "@/shared/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <QueryProvider>
           <Toaster richColors />
           <DelayedModalWrapper />
+          <TawkChat />
           <Navbar />
           {children}
           <Footer />
