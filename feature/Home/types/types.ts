@@ -6,5 +6,5 @@ export type TPortfolio = {
   description: string;
   features: string[];
   slug: string;
-  img: StaticImageData;
+  img: StaticImageData | string;
 };

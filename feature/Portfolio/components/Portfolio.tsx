@@ -4,6 +4,9 @@ import { Container, SectionWrapper } from "@/shared/common";
 import { PortfolioCard } from "./PortfolioCard";
 import { PORTFOLIOS } from "../lib/constant";
 
+// OLD PORTFOLIO COMPONENT - COMMENTED OUT
+// This component is preserved but not used anymore
+// The portfolio page now uses CaseStudies from the homepage
 export const Portfolio = () => {
   return (
     <SectionWrapper>

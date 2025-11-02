@@ -8,7 +8,6 @@ import {
   SectionWrapper,
 } from "@/shared/common";
 import { TESTIMONIALS } from "../../../feature/Home/lib";
-import Image from "next/image";
 
 export const Testimonial = () => {
   return (
@@ -25,7 +24,7 @@ export const Testimonial = () => {
           </p>
           <div className="flex flex-col gap-y-6 md:gap-y-8 mt-12 md:mt-16 lg:mt-20">
             {TESTIMONIALS.map(
-              ({ description, designation, id, name, initials, logo }) => (
+              ({ description, designation, id, name, initials }) => (
                 <Card
                   key={id}
                   className="py-8 md:py-10 lg:py-14 bg-accent-foreground text-background border-muted-foreground"
@@ -50,13 +49,7 @@ export const Testimonial = () => {
                           <Rating rating={5} />
                         </div>
                       </div>
-                      <Image
-                        src={logo}
-                        alt={designation}
-                        width={400}
-                        height={400}
-                        className="w-16 md:w-20 lg:w-24 h-auto self-end sm:self-center"
-                      />
+                      {/* Image removed as requested */}
                     </div>
                   </CardContent>
                 </Card>

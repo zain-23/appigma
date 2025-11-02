@@ -21,10 +21,10 @@ export const HomePage = () => {
       <Discover />
       <Services />
       <Expertise />
+      <DevelopmentProcess />
       <CaseStudies />
       <Cta />
       <Journey />
-      <DevelopmentProcess />
       <Technologies />
       <Testimonial />
       <Faq />

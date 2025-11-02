@@ -17,6 +17,9 @@ export const Discover = () => {
             className="absolute lg:block hidden top-0 left-0 w-full h-full object-cover"
             alt="ai-revolution"
             fill
+            loading="lazy"
+            sizes="(max-width: 1024px) 100vw, 100vw"
+            placeholder="blur"
           />
 
           <div className="col-span-1 text-primary-foreground space-y-4 md:space-y-6 relative z-[1] w-full md:max-w-[70%] lg:max-w-[50%]">

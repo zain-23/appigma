@@ -3,9 +3,15 @@ import { CASE_STUDY } from "../lib";
 
 export const CaseStudyPage = ({ slug }: { slug: string }) => {
   const data = CASE_STUDY[slug as keyof typeof CASE_STUDY];
+  
   return (
     <>
-      <Hero />
+      <Hero 
+        title={data.hero.title}
+        description={data.hero.description}
+        sideImage={data.hero.sideImage}
+        bgColor={data.hero.bgColor}
+      />
       <AppDescriptionShowcase
         descriptions={data.project_description.description}
         title={data.project_description.title}

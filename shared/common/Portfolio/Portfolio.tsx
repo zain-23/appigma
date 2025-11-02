@@ -15,11 +15,11 @@ export const Portfolio: FC<TPortfolio & { index: number }> = ({
   slug,
 }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-0">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
       <div
         className={cn(
-          "col-span-1 space-y-4 md:space-y-6 lg:space-y-10 lg:pr-6",
-          index % 2 === 0 ? "lg:order-1" : "lg:order-2"
+          "col-span-1 space-y-4 md:space-y-6 lg:space-y-10",
+          index % 2 === 0 ? "lg:order-1 lg:pr-6" : "lg:order-2 lg:pl-6"
         )}
       >
         <h3 className="text-2xl md:text-4xl lg:text-5xl font-semibold">
@@ -65,7 +65,15 @@ export const Portfolio: FC<TPortfolio & { index: number }> = ({
           index % 2 === 0 ? "lg:order-2" : "lg:order-1"
         )}
       >
-        <Image src={img} alt={title} fill />
+        <Image
+          src={img}
+          alt={title}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+          className="object-cover"
+        />
       </div>
     </div>
   );

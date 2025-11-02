@@ -1,147 +1,127 @@
 export const TERM_AND_CONDITION = [
   {
     id: 1,
-    title: "Terms and Conditions for Appigma",
+    title: "1. Purpose and Acceptance",
     paragraph: [
       {
         id: 1,
-        description: `These terms and conditions ("Terms", "Agreement") are an agreement between Website Operator ("Website Operator", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of the appigma.com website and any of its products or services (collectively, "Website" or "Services").`,
-      },
-      {
-        id: 2,
-        description: `These Website Standard Terms and Conditions written on this webpage shall manage your use of our website.`,
-      },
-      {
-        id: 3,
-        description: `These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.`,
+        description: `These Terms of Use ("Terms") constitute a binding agreement between Appigma LLC ("Appigma," "we," "our," or "us") and the individual or legal entity ("Client," "you," or "your") that engages or utilizes Appigma's professional services, software, digital solutions, or related products (collectively, the "Services"). By accessing, registering for, or using the Services, you acknowledge that you have read, understood, and agree to be legally bound by these Terms. You further acknowledge that all work performed by Appigma is conducted in reliance upon these Terms.`,
       },
     ],
   },
   {
     id: 2,
-    title: "Restrictions",
+    title: "2. Scope of Application",
     paragraph: [
       {
         id: 1,
-        description: `These terms and conditions ("Terms", "Agreement") are an agreement between Website Operator ("Website Operator", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of the appigma.com website and any of its products or services (collectively, "Website" or "Services").`,
-      },
-      {
-        id: 2,
-        description: `These Website Standard Terms and Conditions written on this webpage shall manage your use of our website.`,
-      },
-      {
-        id: 3,
-        description: `These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.`,
+        description: `These Terms govern all engagements, proposals, agreements, and communications pertaining to Services rendered by Appigma. They apply to all projects, deliverables, and intellectual property produced or managed by Appigma, whether delivered via website, email, or direct contractual engagement. These Terms do not extend to: - Third-party entities or subcontractors not under Appigma's management or ownership; - Individuals or organizations unrelated to Appigma's contractual structure; or - External websites or links not controlled by Appigma.`,
       },
     ],
   },
   {
     id: 3,
-    title: "Age requirement",
+    title: "3. Client Cooperation and Good Faith",
     paragraph: [
       {
         id: 1,
-        description: `You must be at least 16 years of age to use this Website. By using this Website and by agreeing to this Agreement you warrant and represent that you are at least 18 years of age.`,
+        description: `Client cooperation is essential to the timely and successful completion of any project. The Client agrees to: - Provide accurate, timely, and complete information as reasonably requested; - Communicate promptly regarding approvals, materials, and feedback; and - Make timely payments pursuant to any invoicing or proposal schedule. Appigma shall not be liable for any delay, deficiency, or failure in performance resulting from the Client's failure to cooperate, communicate, or provide information in a timely manner.`,
       },
     ],
   },
   {
     id: 4,
-    title: "Links to other websites",
+    title: "4. Complaints and Dispute Process",
     paragraph: [
       {
         id: 1,
-        description: `Although this Website may link to other websites, we are not, directly or indirectly, implying any approval, association, sponsorship, endorsement, or affiliation with any linked website, unless specifically stated herein. We are not responsible for examining or evaluating, and we do not warrant the offerings of, any businesses or individuals or the content of their websites. We do not assume any responsibility or liability for the actions, products, services, and content of any other third-parties. You should carefully review the legal statements and other conditions of use of any website which you access through a link from this Website. Your linking to any other off-site websites is at your own risk.`,
+        description: `In the event of dissatisfaction, the Client must notify Appigma in writing at hello@appigma.com and allow a reasonable opportunity for resolution. Appigma maintains a no-chargeback policy. Clients expressly agree not to initiate or request any chargeback with their financial institution. Instead, any concerns shall be addressed through good-faith negotiation, followed—if necessary—by mediation or arbitration under Section 9. This cooperative process is a mandatory condition precedent to any potential refund or financial adjustment.`,
       },
     ],
   },
   {
     id: 5,
-    title: "Prohibited uses",
+    title: "5. Refund Policy",
     paragraph: [
       {
         id: 1,
-        description: `In addition to other terms as set forth in the Agreement, you are prohibited from using the Website or its Content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Service or of any related website, other websites, or the Internet; (h) to collect or track the personal information of others; (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; (j) for any obscene or immoral purpose; or (k) to interfere with or circumvent the security features of the Service or any related website, other websites, or the Internet. We reserve the right to terminate your use of the Service or any related website for violating any of the prohibited uses.`,
+        description: `Appigma delivers Services in a professional and commercially reasonable manner. Refund eligibility will be evaluated only after good-faith efforts to resolve the issue internally have failed.`,
+      },
+      {
+        id: 2,
+        description: `A. Custom Software / Application Development - A full refund may be issued if a project has not yet commenced. - If a project has commenced, Appigma may issue a partial refund proportionate to the uncompleted portion of work, as reasonably determined by Appigma. - Where no written contract exists, Appigma shall assess project completion and refund eligibility based on documented deliverables and resource allocation.`,
+      },
+      {
+        id: 3,
+        description: `B. Dedicated Hiring / Resource Engagement - A full refund may be granted if Appigma fails to initiate the engagement due to unavailability of personnel. - A partial refund may be considered if the Client cancels prior to completion. - No refunds shall apply for days or hours already worked, or services rendered. - The Client must promptly notify Appigma's Project Manager of any dissatisfaction to permit corrective measures. Retroactive claims shall not be entertained.`,
       },
     ],
   },
   {
     id: 6,
-    title: "Intellectual property rights",
+    title: "6. Delivery Obligations",
     paragraph: [
       {
         id: 1,
-        description: `This Agreement does not transfer to you any intellectual property owned by Website Operator or third-parties, and all rights, titles, and interests in and to such property will remain (as between the parties) solely with Website Operator. All trademarks, service marks, graphics and logos used in connection with our Website or Services, are trademarks or registered trademarks of Website Operator or Website Operator licensors. Other trademarks, service marks, graphics and logos used in connection with our Website or Services may be the trademarks of other third-parties. Your use of our Website and Services grants you no right or license to reproduce or otherwise use any Website Operator or third-party trademarks.`,
+        description: `Appigma shall use reasonable commercial efforts to deliver projects in accordance with mutually agreed timelines. Delays caused by client inaction, incomplete information, or change in project scope shall not constitute a breach by Appigma. Unless a separate written agreement includes a penalty clause, no compensation shall be payable for delays attributable to factors beyond Appigma's control.`,
       },
     ],
   },
   {
     id: 7,
-    title: "Limitation of liability",
+    title: "7. Limitation of Liability",
     paragraph: [
       {
         id: 1,
-        description: `To the fullest extent permitted by applicable law, in no event will Website Operator, its affiliates, officers, directors, employees, agents, suppliers or licensors be liable to any person for (a): any indirect, incidental, special, punitive, cover or consequential damages (including, without limitation, damages for lost profits, revenue, sales, goodwill, use of content, impact on business, business interruption, loss of anticipated savings, loss of business opportunity) however caused, under any theory of liability, including, without limitation, contract, tort, warranty, breach of statutory duty, negligence or otherwise, even if Website Operator has been advised as to the possibility of such damages or could have foreseen such damages. To the maximum extent permitted by applicable law, the aggregate liability of Website Operator and its affiliates, officers, employees, agents, suppliers and licensors, relating to the services will be limited to an amount greater of one dollar or any amounts actually paid in cash by you to Website Operator for the prior one month period prior to the first event or occurrence giving rise to such liability. The limitations and exclusions also apply if this remedy does not fully compensate you for any losses or fails of its essential purpose.`,
+        description: `To the fullest extent permitted by law, Appigma's aggregate liability, whether in contract, tort, or otherwise, shall be limited to the portion of fees actually paid and attributable to the uncompleted portion of the Services. Under no circumstance shall Appigma be liable for any consequential, incidental, indirect, punitive, or special damages, including without limitation loss of data, business interruption, or loss of profits. For the avoidance of doubt, a refund—if any—is the Client's sole and exclusive remedy for claims arising under these Terms.`,
       },
     ],
   },
   {
     id: 8,
-    title: "Indemnification",
+    title: "8. Refund Processing",
     paragraph: [
       {
         id: 1,
-        description: `You agree to indemnify and hold Website Operator and its affiliates, directors, officers, employees, and agents harmless from and against any liabilities, losses, damages or costs, including reasonable attorneys' fees, incurred in connection with or arising from any third-party allegations, claims, actions, disputes, or demands asserted against any of them as a result of or relating to your Content, your use of the Website or Services or any willful misconduct on your part.`,
+        description: `Once approved, refunds shall be issued within five (5) business days. Refunds will be returned through the original method of payment unless otherwise agreed in writing.`,
       },
     ],
   },
   {
     id: 9,
-    title: "Severability",
+    title: "9. Dispute Resolution and No-Chargeback Policy",
     paragraph: [
       {
         id: 1,
-        description: `All rights and restrictions contained in this Agreement may be exercised and shall be applicable and binding only to the extent that they do not violate any applicable laws and are intended to be limited to the extent necessary so that they will not render this Agreement illegal, invalid or unenforceable. If any provision or portion of any provision of this Agreement shall be held to be illegal, invalid or unenforceable by a court of competent jurisdiction, it is the intention of the parties that the remaining provisions or portions thereof shall constitute their agreement with respect to the subject matter hereof, and all such remaining provisions or portions thereof shall remain in full force and effect.`,
+        description: `Appigma and the Client agree that all disputes, claims, or controversies arising from or related to the Services shall be resolved exclusively through the following process: 1. Good-Faith Negotiation: Both parties will first attempt to resolve disputes through direct, documented communication. 2. Mediation: If a resolution cannot be achieved, the parties shall participate in mediation administered by a neutral third party. 3. Arbitration: Should mediation fail, the matter shall be submitted to binding arbitration under the rules of the American Arbitration Association (AAA). The decision rendered by the arbitrator shall be final and enforceable in any court of competent jurisdiction.`,
+      },
+      {
+        id: 2,
+        description: `Chargebacks are strictly prohibited. By engaging Appigma, the Client irrevocably waives the right to initiate or request a chargeback for any payment related to the Services. Refunds, if any, shall only be determined through mutual agreement, mediation, or arbitration as set forth above.`,
       },
     ],
   },
   {
     id: 10,
-    title: "Dispute resolution",
+    title: "10. Amendments and Modifications",
     paragraph: [
       {
         id: 1,
-        description: `The formation, interpretation, and performance of this Agreement and any disputes arising out of it shall be governed by the substantive and procedural laws of California, United States without regard to its rules on conflicts or choice of law and, to the extent applicable, the laws of United States. The exclusive jurisdiction and venue for actions related to the subject matter hereof shall be the courts located in California, United States, and you hereby submit to the personal jurisdiction of such courts. You hereby waive any right to a jury trial in any proceeding arising out of or related to this Agreement. The United Nations Convention on Contracts for the International Sale of Goods does not apply to this Agreement.`,
+        description: `Appigma reserves the right to modify or amend these Terms at any time. Updated Terms shall become effective upon publication to https://www.appigma.com. Continued use of Appigma's Services constitutes acceptance of any revisions.`,
       },
     ],
   },
   {
     id: 11,
-    title: "Changes and amendments",
+    title: "11. Contact Information",
     paragraph: [
       {
         id: 1,
-        description: `We reserve the right to modify this Agreement or its policies relating to the Website or Services at any time, effective upon posting of an updated version of this Agreement on the Website. When we do, we will send you an email to notify you. Continued use of the Website after any such changes shall constitute your consent to such changes. Policy was created with https://www.WebsitePolicies.com`,
+        description: `Appigma LLC Email: hello@appigma.com Website: https://www.appigma.com`,
       },
-    ],
-  },
-  {
-    id: 12,
-    title: "Acceptance of these terms",
-    paragraph: [
       {
-        id: 1,
-        description: `You acknowledge that you have read this Agreement and agree to all its terms and conditions. By using the Website or its Services you agree to be bound by this Agreement. If you do not agree to abide by the terms of this Agreement, you are not authorized to use or access the Website and its Services.`,
-      },
-    ],
-  },
-  {
-    id: 13,
-    title: "Contacting us",
-    paragraph: [
-      {
-        id: 1,
-        description: `If you would like to contact us to understand more about this Agreement or wish to contact us concerning any matter relating to it, you may send an email to info@appima.com`,
+        id: 2,
+        description: `IN WITNESS WHEREOF, by engaging Appigma's Services, the Client acknowledges and agrees to the foregoing Terms of Use.`,
       },
     ],
   },

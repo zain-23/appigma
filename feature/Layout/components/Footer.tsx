@@ -31,10 +31,7 @@ export const Footer = () => {
           <div className="col-span-1 space-y-3 md:space-y-4 lg:pr-6">
             <Logo variant="light" className="w-52 lg:w-auto" />
             <p className="text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit nostrum obcaecati animi maxime saepe exercitationem
-              delectus et velit eum, numquam sequi sint natus facere assumenda,
-              vero quasi neque doloribus aliquid.
+              Appigma is a leading software development company specializing in mobile app development, web solutions, and AI-powered applications. We transform innovative ideas into scalable digital products that drive business growth and deliver exceptional user experiences.
             </p>
           </div>
           <div className="col-span-1 space-y-3 md:space-y-4">
