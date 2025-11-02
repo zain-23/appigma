@@ -33,10 +33,11 @@ export const Hero = () => {
         disablePictureInPicture
         webkit-playsinline="true"
         preload="auto"
-        className="w-full h-full absolute top-0 left-0 object-cover z-[-2]"
+        className="w-full h-full absolute top-0 left-0 object-cover z-[-2] bg-black"
+        style={{ backgroundColor: 'black' }}
       >
         <source
-          src="https://bfd6tumtbx.ufs.sh/f/LxNvt5anRP0UrnQQUAklLVYnWKPF0ajmzq6T9xyiUAQkhJBr"
+          src="https://appigma-casestudy.s3.us-west-1.amazonaws.com/appigmafront.mp4"
           type="video/mp4"
         />
       </video>
@@ -52,9 +53,7 @@ export const Hero = () => {
             <span>Company</span>
           </h2>
           <p className="text-lg leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            eius laudantium quos nemo cupiditate, cum ab nulla eveniet corporis
-            cumque nisi numquam quisquam neque odit,
+            We transform your innovative ideas into powerful digital solutions. Our expert team specializes in creating custom mobile applications, cutting-edge web platforms, and AI-driven technologies that help businesses thrive in the digital age.
           </p>
           <div className="flex justify-between w-full">
             <Button

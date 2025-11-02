@@ -39,7 +39,7 @@ export const Expertise = () => {
                 className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
               >
                 <motion.div
-                  className="relative overflow-hidden shadow-sm py-6 md:py-8 lg:py-10 px-4 md:px-6 lg:px-8 rounded-xl bg-muted"
+                  className="relative overflow-hidden shadow-sm py-6 md:py-8 lg:py-10 px-4 md:px-6 lg:px-8 rounded-xl bg-muted h-full min-h-[280px] md:min-h-[320px] lg:min-h-[360px] flex flex-col"
                   onHoverStart={() => setHoveredCard(id)}
                   onHoverEnd={() => setHoveredCard(null)}
                   transition={{ duration: 0.3, ease: "easeOut" }}
@@ -57,11 +57,15 @@ export const Expertise = () => {
                       alt={title}
                       className="object-cover"
                       fill
+                      loading="lazy"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                     />
                   </motion.div>
 
                   <motion.div
-                    className="aspect-video flex flex-col justify-center items-start gap-y-3 md:gap-y-4"
+                    className="flex flex-col justify-center items-start gap-y-3 md:gap-y-4 flex-grow"
                     animate={{
                       y: hoveredCard === id ? -10 : 0,
                     }}

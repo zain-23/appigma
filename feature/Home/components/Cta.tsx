@@ -14,6 +14,9 @@ export const Cta = () => {
             className="absolute top-0 left-0 w-full h-full object-cover lg:block hidden"
             alt="ai-revolution"
             fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 100vw"
+            placeholder="blur"
           />
           <div className="col-span-1 text-primary-foreground space-y-4 md:space-y-6 relative z-[1] w-full md:max-w-[70%] lg:max-w-[50%]">
             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-semibold">

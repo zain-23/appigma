@@ -1,14 +1,19 @@
+"use client";
 import { Breadcrumb, Button, Container, SectionWrapper } from "@/shared/common";
-import heroImage from "../../../public/assets/services/ai/banner-ai.webp";
+import { useParams } from "next/navigation";
+import { SERVICES } from "../lib";
 import Image from "next/image";
 import Link from "next/link";
 
 export const Hero = () => {
+  const { slug } = useParams() as { slug: keyof typeof SERVICES };
+  const data = SERVICES[slug];
+  
   return (
     <SectionWrapper className="py-0 lg:h-screen h-[80vh] relative">
       <Image
-        src={heroImage}
-        alt="AI Automation"
+        src={data.heroSection.heroBgImg}
+        alt={data.heroSection.title}
         fill
         className="absolute top-0 left-0 object-cover z-[-1]"
       />
@@ -16,16 +21,13 @@ export const Hero = () => {
         <Breadcrumb />
         <div className="max-w-4xl text-background space-y-4 md:space-y-6">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold lg:font-black">
-            AI Development Services
+            {data.heroSection.title}
           </h1>
           <p className="leading-relaxed md:leading-loose text-base lg:text-lg">
-            Tekrevol is a renowned AI development services company in the USA,
-            trusted worldwide for its automation solutions. We develop
-            artificial intelligence software and apps for businesses of all
-            sizes to discard manual processes.
+            {data.heroSection.description}
           </p>
           <Button asChild size={"lg"} className="w-auto">
-            <Link href={"/contact-us"}>Talk To Your AI Consultant</Link>
+            <Link href={"/contact-us"}>{data.heroSection.btnContent}</Link>
           </Button>
         </div>
       </Container>

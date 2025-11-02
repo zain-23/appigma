@@ -22,6 +22,9 @@ export const Cta = ({
         alt={"Leading ai"}
         fill
         className="absolute top-0 left-0 z-[-1] object-cover"
+        loading="lazy"
+        sizes="100vw"
+        placeholder="blur"
       />
 
       <Container>

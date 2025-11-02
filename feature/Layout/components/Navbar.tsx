@@ -79,8 +79,7 @@ export const Navbar = () => {
                               href={nav.path}
                               title={nav.item}
                             >
-                              How to install dependencies and structure your
-                              app.
+                              {nav.description || "Professional development services tailored to your business needs."}
                             </ListItem>
                           ))}
                         </ul>

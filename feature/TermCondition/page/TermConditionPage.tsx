@@ -6,7 +6,7 @@ export const TermConditionPage = () => {
     <SectionWrapper className="py-24 lg:py-36">
       <Container>
         <Breadcrumb />
-        <div className="max-w-5xl mx-auto space-y-8 md:space-y-12 lg:space-y-16">
+        <div className="max-w-5xl mx-auto mt-8 md:mt-12 lg:mt-16 space-y-8 md:space-y-12 lg:space-y-16">
           {TERM_AND_CONDITION.map(({ id, paragraph, title }) => (
             <div className="space-y-3 md:space-y-4" key={id}>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">

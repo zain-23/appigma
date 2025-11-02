@@ -9,4 +9,3 @@ export * from "./LeadingBusiness";
 export * from "./PoweredSolution";
 export * from "./Industry";
 export * from "./Innovation";
-export * from "./Portfolio";

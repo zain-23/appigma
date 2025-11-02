@@ -1,4 +1,5 @@
 import { AwardRecognization, Faq, Testimonial } from "@/shared/common";
+import { CaseStudies } from "@/feature/Home/components";
 import {
   Demand,
   Expertise,
@@ -7,22 +8,20 @@ import {
   Innovation,
   LeadingBusiness,
   MultiDomain,
-  Portfolio,
   Services,
-  TopBrand,
 } from "../components";
 
 export const ServicePage = () => {
   return (
     <>
       <Hero />
-      <TopBrand />
       <Demand />
       <Services />
       <Expertise />
       <MultiDomain />
       <LeadingBusiness />
-      <Portfolio />
+      {/* <Portfolio /> */}
+      <CaseStudies />
       <Industry />
       <Innovation />
       <Testimonial />

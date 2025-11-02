@@ -5,15 +5,10 @@ export const CaseStudy = () => {
     <SectionWrapper className="bg-muted">
       <Container className="space-y-4 md:space-y-6">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
-          Case Study
+          Our Portfolio
         </h2>
         <p className="text-base lg:text-lg leading-relaxed max-w-5xl">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error hic
-          aperiam inventore saepe laboriosam, illum sint perferendis culpa
-          voluptate quaerat, a alias pariatur et assumenda nemo eaque tenetur
-          praesentium iusto. Error hic aperiam inventore saepe laboriosam, illum
-          sint perferendis culpa voluptate quaerat, a alias pariatur et
-          assumenda nemo eaque tenetur praesentium iusto.
+          Explore our comprehensive portfolio of successful projects across mobile app development, web design, and innovative digital solutions. Each case study showcases our expertise in transforming complex business requirements into user-friendly, scalable applications that drive real results for our clients.
         </p>
       </Container>
     </SectionWrapper>

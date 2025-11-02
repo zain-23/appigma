@@ -28,6 +28,10 @@ export const Clients = () => {
                 src={img}
                 alt={`Company-logo-${index + 1}`}
                 className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                width={120}
+                height={60}
+                loading="lazy"
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 16vw"
               />
             </HoverCard>
           ))}

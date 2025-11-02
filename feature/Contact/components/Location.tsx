@@ -7,14 +7,12 @@ export const CountryLocation = () => {
   return (
     <SectionWrapper>
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-y md:divide-y-0 md:divide-x">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto divide-y md:divide-y-0 md:divide-x">
           {BRANHES.map(({ name, address, img }, index) => (
             <div
               className={cn(
                 "col-span-1 text-center p-6 md:p-8 h-[350px] md:h-[400px] flex flex-col justify-center gap-y-3 md:gap-y-4",
-                index % 3 === 0 && "lg:border-l",
-                index === BRANHES.length - 1 && "lg:border-r",
-                index <= BRANHES.length - 4 && "lg:border-b"
+                index === 0 && "md:border-r"
               )}
               key={name}
             >

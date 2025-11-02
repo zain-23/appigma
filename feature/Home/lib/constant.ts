@@ -1,10 +1,7 @@
+import AIDevelopment from "../../../public/assets/ai-development.webp";
 import MobileApplication from "../../../public/assets/mobile-app.webp";
 import WebDevelopment from "../../../public/assets/web-development.webp";
-import AIDevelopment from "../../../public/assets/ai-development.webp";
 // Portfolio
-import AMJ from "../../../public/assets/portfolio/portfolio.webp";
-import TruthGpt from "../../../public/assets/portfolio/portfolio-2.webp";
-import FSK from "../../../public/assets/portfolio/portfolio-3.webp";
 import { TPortfolio } from "../types";
 // Awards
 import award1 from "../../../public/assets/awards/Clutch.webp";
@@ -19,21 +16,21 @@ import award9 from "../../../public/assets/awards/top_Reated.webp";
 import award10 from "../../../public/assets/awards/top_developer.webp";
 // Icon
 import {
+  Facebook,
+  Instagram,
+  Linkedin,
   Mail,
   Phone,
-  Facebook,
   Youtube,
-  Linkedin,
-  Instagram,
 } from "lucide-react";
 import { ExpertiseIcon, ServicesIcon } from "../components";
 // Development Process
-import process1 from "../../../public/assets/development-process/ideate.webp";
 import process2 from "../../../public/assets/development-process/Design.webp";
 import process3 from "../../../public/assets/development-process/Development.webp";
-import process4 from "../../../public/assets/development-process/Test.webp";
 import process5 from "../../../public/assets/development-process/Launch.webp";
 import process6 from "../../../public/assets/development-process/NewSupport.webp";
+import process4 from "../../../public/assets/development-process/Test.webp";
+import process1 from "../../../public/assets/development-process/ideate.webp";
 // Testimonial clients company logo
 import clientCompanyLogo from "../../../public/assets/testimonials/pauseitive_updated.svg";
 
@@ -87,7 +84,7 @@ export const EXPERTISE = [
     id: 1,
     title: "Automotive",
     description:
-      "Implement IoT telematics and AI-driven predictive maintenance to optimize fleet management. Gain real-time data for enhanced vehicle performance and reduced downtime. Improve safety and efficiency with advanced analytics.",
+      "Delivering cutting-edge solutions for automotive industry with IoT integration, fleet management systems, and predictive maintenance technologies to enhance vehicle performance and operational efficiency.",
     img: MobileApplication,
     icon: ExpertiseIcon.Automotive,
   },
@@ -95,7 +92,7 @@ export const EXPERTISE = [
     id: 2,
     title: "HealthCare",
     description:
-      "Utilize HIPAA-compliant telemedicine platforms and integrated EMR/EHR systems for streamlined patient care. Employ AI diagnostics for better outcomes and predictive analytics to enhance operational efficiency.",
+      "Providing comprehensive healthcare technology solutions including telemedicine platforms, EMR/EHR systems, and AI-powered diagnostic tools to improve patient care and streamline medical operations.",
     img: WebDevelopment,
     icon: ExpertiseIcon.HealthCare,
   },
@@ -103,7 +100,7 @@ export const EXPERTISE = [
     id: 3,
     title: "On-Demand",
     description:
-      "Adopt scalable cloud architectures with real-time GPS tracking and AI-driven demand forecasting. Ensure rapid, reliable service delivery and seamless user experiences. Scale effortlessly with fluctuating demands.",
+      "Building scalable on-demand platforms with real-time tracking, intelligent matching algorithms, and cloud-based infrastructure to ensure seamless service delivery and exceptional user experiences.",
     img: WebDevelopment,
     icon: ExpertiseIcon.Demand,
   },
@@ -111,7 +108,7 @@ export const EXPERTISE = [
     id: 4,
     title: "Education",
     description:
-      "Leverage VR-enabled learning platforms and AI-driven personalized paths to enhance student engagement. Utilize real-time analytics for adaptive content and improved teaching strategies.",
+      "Creating innovative educational platforms with immersive learning experiences, personalized curriculum paths, and comprehensive analytics to enhance student engagement and educational outcomes.",
     img: MobileApplication,
     icon: ExpertiseIcon.Education,
   },
@@ -119,7 +116,7 @@ export const EXPERTISE = [
     id: 5,
     title: "Music",
     description:
-      "Deploy advanced streaming platforms with AI-driven recommendations and blockchain-based royalty management. Maximize revenue, enhance user engagement, and ensure secure transactions.",
+      "Developing advanced music streaming platforms with intelligent recommendations, secure royalty management, and immersive audio experiences to maximize engagement and revenue opportunities.",
     img: WebDevelopment,
     icon: ExpertiseIcon.Music,
   },
@@ -127,7 +124,7 @@ export const EXPERTISE = [
     id: 6,
     title: "Fintech",
     description:
-      "Implement blockchain smart contracts, AI-driven fraud detection, and real-time payment processing for secure transactions. Use data analytics for personalized financial solutions and enhanced security.",
+      "Implementing secure fintech solutions with blockchain technology, advanced fraud detection, and real-time payment processing to deliver safe and personalized financial services.",
     img: MobileApplication,
     icon: ExpertiseIcon.Fintech,
   },
@@ -135,7 +132,7 @@ export const EXPERTISE = [
     id: 7,
     title: "Logistic",
     description:
-      "Optimize operations with AI-driven route planning, IoT tracking, and advanced supply chain analytics. Improve delivery times, reduce costs, and gain real-time visibility and predictive insights.",
+      "Optimizing logistics operations with intelligent route planning, IoT-enabled tracking systems, and predictive analytics to improve delivery efficiency and reduce operational costs.",
     img: WebDevelopment,
     icon: ExpertiseIcon.Logistic,
   },
@@ -143,7 +140,7 @@ export const EXPERTISE = [
     id: 8,
     title: "Retail",
     description:
-      "Integrate AI-powered inventory management and personalized recommendations with omnichannel sales. Drive customer loyalty, optimize stock levels, and increase sales through data-driven insights.",
+      "Transforming retail experiences with AI-powered inventory management, personalized shopping recommendations, and omnichannel solutions to drive sales and enhance customer satisfaction.",
     img: MobileApplication,
     icon: ExpertiseIcon.Retail,
   },
@@ -151,7 +148,7 @@ export const EXPERTISE = [
     id: 9,
     title: "E-Commerce",
     description:
-      "Enhance platforms with scalable cloud infrastructure, secure payment gateways, and AI-driven customer behavior analytics. Boost conversions, improve user experience, and drive sustained growth.",
+      "Building high-performance e-commerce platforms with scalable infrastructure, secure payment systems, and advanced analytics to boost conversions and drive sustainable business growth.",
     img: WebDevelopment,
     icon: ExpertiseIcon.Ecommerce,
   },
@@ -159,7 +156,7 @@ export const EXPERTISE = [
     id: 10,
     title: "Real-Estate",
     description:
-      "Modernize with VR property tours, AI-driven valuations, and blockchain smart contracts. Streamline transactions, enhance property visibility, and provide data-driven insights for better decisions.",
+      "Revolutionizing real estate with virtual property tours, AI-powered valuation tools, and blockchain-based contracts to streamline transactions and enhance property discovery experiences.",
     img: MobileApplication,
     icon: ExpertiseIcon.RealState,
   },
@@ -167,46 +164,90 @@ export const EXPERTISE = [
 
 export const PORTFOLIOS: TPortfolio[] = [
   {
-    title: "AMJ Workplace Wellness",
-    tags: ["Game Design", "Mobile App Development"],
-    description:
-      "AMJ Workplace Wellness is a holistic wellness app designed to promote employee health and fitness in the corporate environment.",
-    features: [
-      "Seamless UI/UX Design for Corporate Use",
-      "Integration with Wearable Devices",
-      "Real-time Health Tracking and Analysis",
-      "80% Increase in Employee Satisfaction",
-      "AI-driven Personalized Recommendations",
+    title: "College Keys",
+    tags: [
+      "Mobile App Design",
+      "Mobile App Development",
+      "Admin Panel Development",
     ],
-    slug: "amj-wellness",
-    img: AMJ,
+    description:
+      "CollegeKeys provides a streamlined solution for students and young professionals seeking affordable and reliable housing. Features transparent property listings, verified reviews, and secure booking systems.",
+    features: [
+      "Transparent Property Listings",
+      "Verified Reviews System",
+      "Secure Booking Platform",
+      "Personalized Recommendations",
+      "In-App Communication Tools",
+    ],
+    slug: "college-keys",
+    img: "https://appigma-casestudy.s3.us-west-1.amazonaws.com/college-keys/Property+App+-+Key.jpg",
   },
   {
-    title: "Truth GPT",
-    tags: ["UI/UX Design", "Mobile App Development"],
-    description:
-      "AI-powered mobile application designed for transparent, accessible information through a chatbot interface. Developed to enhance interaction realism with advanced Flutter animations, engaging 3D models, and prompt contextual engineering for quick, helpful responses.",
-    features: [
-      "40% More Interactions with Flutter Animations",
-      "3X Engagement via 3D Features",
-      "Quality Responses with Semantic Search",
+    title: "HEAVELY",
+    tags: [
+      "Mobile App Design",
+      "Mobile App Development",
+      "Admin Panel Development",
     ],
-    slug: "truth-gpt",
-    img: TruthGpt,
+    description:
+      "An intuitive app to browse, rent, and manage construction equipment with ease. Features real-time availability, seamless checkout, and efficient tools for contractors—all in one platform.",
+    features: [
+      "Real-Time Inventory Tracking",
+      "Categorized Equipment Listings",
+      "Intuitive Checkout Process",
+      "Order Management Tools",
+      "Maintenance Scheduling",
+    ],
+    slug: "heavely",
+    img: "https://appigma-casestudy.s3.us-west-1.amazonaws.com/construction/Construction+App+(5).jpg",
   },
   {
-    title: "Find Serve & Keep",
-    tags: ["Game Design", "Mobile App Development"],
+    title: "EAT GROUP",
+    tags: ["Art Direction", "Web Design", "Production"],
     description:
-      "FSK revolutionizes mobile gaming with its innovative fusion of match-3 puzzles, time management challenges, and captivating role-playing elements.",
+      "We drive into your business dream in order to bring to the surface underlying value that your brand creates for its customers. Deploying world-class creative design and team on demand.",
     features: [
-      "Immersive Role-Playing Narrative",
-      "Real-Time Market Strategies",
-      "Monetization Without Disruption",
-      "Engaging User Experience",
+      "Art Direction & Creative Strategy",
+      "World-Class Web Design",
+      "Production Services",
+      "On-Demand Team Deployment",
+      "Visual Hierarchy Optimization",
+      "Client Partnership Continuity",
     ],
-    slug: "fsk",
-    img: FSK,
+    slug: "eat-group",
+    img: "https://appigma-casestudy.s3.us-west-1.amazonaws.com/group-eat/Group+Eat.jpg",
+  },
+  {
+    title: "CRAFT MASTER",
+    tags: ["Art Direction", "Web Design", "Production"],
+    description:
+      "We drive into your business dream in order to bring to the surface underlying value that your brand creates for its customers. Deploying world-class creative design and team on demand.",
+    features: [
+      "Art Direction & Creative Strategy",
+      "World-Class Web Design",
+      "Production Services",
+      "On-Demand Team Deployment",
+      "Visual Hierarchy Optimization",
+      "Client Partnership Continuity",
+    ],
+    slug: "craft-master",
+    img: "https://appigma-casestudy.s3.us-west-1.amazonaws.com/craft-master/Craft+Master.jpg",
+  },
+  {
+    title: "UR HOME",
+    tags: ["Art Direction", "Web Design", "Production"],
+    description:
+      "We drive into your business dream in order to bring to the surface underlying value that your brand creates for its customers. Deploying world-class creative design and team on demand.",
+    features: [
+      "Art Direction & Creative Strategy",
+      "World-Class Web Design",
+      "Production Services",
+      "On-Demand Team Deployment",
+      "Visual Hierarchy Optimization",
+      "Client Partnership Continuity",
+    ],
+    slug: "ur-home",
+    img: "https://appigma-casestudy.s3.us-west-1.amazonaws.com/ur-home/UX-2.jpg",
   },
 ];
 
@@ -276,39 +317,39 @@ export const AWARDS = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Keith Cascarelli",
+    name: "Sarah Mitchell",
     description:
-      "I have been working with TekRevol on  their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams.",
-    designation: "WTT",
-    initials: "KC",
+      "Appigma transformed our mobile app vision into reality. Their team's attention to detail and innovative approach helped us launch a product that exceeded our expectations. The user experience they created is simply outstanding, and our customer engagement has increased by 300% since launch.",
+    designation: "Product Manager",
+    initials: "SM",
     logo: clientCompanyLogo,
   },
   {
     id: 2,
-    name: "Jackie Dallas",
+    name: "David Chen",
     description:
-      "I have been working. Throughout this time, I have found their team meticulous in their work processes, starting with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams.",
-    designation: "Digital Manager",
-    initials: "JD",
+      "Working with Appigma was a game-changer for our startup. They understood our complex requirements and delivered a scalable solution that grew with our business. Their technical expertise and project management skills are top-notch. Highly recommended for any development project.",
+    designation: "CTO",
+    initials: "DC",
     logo: clientCompanyLogo,
   },
   {
     id: 3,
-    name: "Hamed Al Zadjal",
+    name: "Emily Rodriguez",
     description:
-      "I have been working with TekRevol on my software development project for over a year now. clearly laying out work steps. The most impressive piece of experience was the communication with their teams.",
+      "The team at Appigma delivered our e-commerce platform ahead of schedule and under budget. Their creative design solutions and robust backend architecture have been instrumental in our success. We've seen a 250% increase in online sales since going live.",
     country: "USA",
-    designation: "Co-Founder and CEO",
-    initials: "HA",
+    designation: "Founder & CEO",
+    initials: "ER",
     logo: clientCompanyLogo,
   },
   {
     id: 4,
-    name: "Keith Cascarelli",
+    name: "Michael Thompson",
     description:
-      "I have been working with initial valuation, framing the overall milestones, and clearly laying out work steps. The most impressive piece of experience was the communication with their teams.",
-    designation: "Founder",
-    initials: "HA",
+      "Appigma's expertise in AI integration helped us build a cutting-edge application that revolutionized our industry. Their team's technical knowledge and innovative thinking made the impossible possible. The results speak for themselves - we've gained a significant competitive advantage.",
+    designation: "VP of Technology",
+    initials: "MT",
     logo: clientCompanyLogo,
   },
 ];
@@ -412,30 +453,15 @@ export const FOOTER_DATA = {
   ],
 };
 
-export const FOOTER_LOCATIONS = [
-  "HOU",
-  "ATX",
-  "DTX",
-  "SF",
-  "MIA",
-  "CHI",
-  "NYC",
-  "DC",
-  "LA",
-  "DXB",
-  "QA",
-  "BH",
-  "KSA",
-  "LDN",
-];
+export const FOOTER_LOCATIONS = ["USA", "PAK"];
 
 export const FOOTER_CONTACT = [
   {
-    data: "+1800-362-9239",
+    data: "+18152379491",
     icon: Mail,
   },
   {
-    data: "info@appigma.com",
+    data: "hello@appigma.com",
     icon: Phone,
   },
 ];

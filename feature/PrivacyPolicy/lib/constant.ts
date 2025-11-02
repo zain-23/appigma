@@ -1,147 +1,161 @@
 export const PRIVACY_POLICY = [
   {
     id: 1,
-    title: "Terms and Conditions for Appigma",
+    title: "Privacy Policy",
     paragraph: [
       {
         id: 1,
-        description: `These terms and conditions ("Terms", "Agreement") are an agreement between Website Operator ("Website Operator", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of the appigma.com website and any of its products or services (collectively, "Website" or "Services").`,
-      },
-      {
-        id: 2,
-        description: `These Website Standard Terms and Conditions written on this webpage shall manage your use of our website.`,
-      },
-      {
-        id: 3,
-        description: `These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.`,
+        description: `This Privacy Policy has been prepared by Appigma regarding Personal data collected on or through our website ("Site"). All capitalized terms shall have the meaning defined herein.`,
       },
     ],
   },
   {
     id: 2,
-    title: "Restrictions",
+    title: "Personal Data",
     paragraph: [
       {
         id: 1,
-        description: `These terms and conditions ("Terms", "Agreement") are an agreement between Website Operator ("Website Operator", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of the appigma.com website and any of its products or services (collectively, "Website" or "Services").`,
-      },
-      {
-        id: 2,
-        description: `These Website Standard Terms and Conditions written on this webpage shall manage your use of our website.`,
-      },
-      {
-        id: 3,
-        description: `These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.`,
+        description: `Should You, the user, voluntarily choose to register with Appigma, we will use your personal data in order to improve our services, otherwise set forth in this Privacy Policy and in any applicable service-specific agreement, such as the Terms and Conditions for Publishers or the Terms and Conditions for Advertisers. We may collect personal data such as first name, last name, address, email address, telephone number, birth date, billing and credit card information.`,
       },
     ],
   },
   {
     id: 3,
-    title: "Age requirement",
+    title: "Use of Personal Data",
     paragraph: [
       {
         id: 1,
-        description: `You must be at least 16 years of age to use this Website. By using this Website and by agreeing to this Agreement you warrant and represent that you are at least 18 years of age.`,
+        description: `Appigma will use personal data provided by You keeping consistent with this Privacy Policy or with any applicable service-specific agreement. We will use personal data that You provide only for the particular reason it was provided for. An example would be personal data collected when You register or gain access to the Site. We and our affiliates also use your personal data and other personally non-identifiable information, which is made available to us through the Site to help us improve the content, functionality, and our services, for a better user experience.`,
       },
     ],
   },
   {
     id: 4,
-    title: "Links to other websites",
+    title: "Personally Non-identifiable Information",
     paragraph: [
       {
         id: 1,
-        description: `Although this Website may link to other websites, we are not, directly or indirectly, implying any approval, association, sponsorship, endorsement, or affiliation with any linked website, unless specifically stated herein. We are not responsible for examining or evaluating, and we do not warrant the offerings of, any businesses or individuals or the content of their websites. We do not assume any responsibility or liability for the actions, products, services, and content of any other third-parties. You should carefully review the legal statements and other conditions of use of any website which you access through a link from this Website. Your linking to any other off-site websites is at your own risk.`,
+        description: `Personally non-identifiable information provided by You at the time of registration, or when You choose to use some of our services, will not, by itself, be sufficient to identify or contact you. The nature of such information may be, but not restricted to, demographics, age, education level, profession, gender, etc. Not only may Appigma collect this information, it may also be included in databases owned and maintained by Appigma's affiliates, agents or service providers. Appigma may pool this with other information to track, for example, the total number of visitors to our Site and the domain names of our visitors' Internet service providers. It is important to note that we don't use personal data available in this process.`,
       },
     ],
   },
   {
     id: 5,
-    title: "Prohibited uses",
+    title: "Passively Collected Information",
     paragraph: [
       {
         id: 1,
-        description: `In addition to other terms as set forth in the Agreement, you are prohibited from using the Website or its Content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Service or of any related website, other websites, or the Internet; (h) to collect or track the personal information of others; (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; (j) for any obscene or immoral purpose; or (k) to interfere with or circumvent the security features of the Service or any related website, other websites, or the Internet. We reserve the right to terminate your use of the Service or any related website for violating any of the prohibited uses.`,
+        description: `We receive and stored certain additional personally non-identifiable information provided by You through the Site. This passively collected information, cannot, at present, be used to identify you. Such information may include, but not be restricted to IP addresses, browser types, domain names, other anonymous statistical data, etc., involving your use of the Site and/or our services.`,
       },
     ],
   },
   {
     id: 6,
-    title: "Intellectual property rights",
+    title: "Aggregated Personal Data",
     paragraph: [
       {
         id: 1,
-        description: `This Agreement does not transfer to you any intellectual property owned by Website Operator or third-parties, and all rights, titles, and interests in and to such property will remain (as between the parties) solely with Website Operator. All trademarks, service marks, graphics and logos used in connection with our Website or Services, are trademarks or registered trademarks of Website Operator or Website Operator licensors. Other trademarks, service marks, graphics and logos used in connection with our Website or Services may be the trademarks of other third-parties. Your use of our Website and Services grants you no right or license to reproduce or otherwise use any Website Operator or third-party trademarks.`,
+        description: `Appigma may aggregate the personal data that is provided to the Site by You. This is conducted in an effort to better understand our users. The aggregated information does not identify You personally. This aggregated data may be shared with its affiliates, agents and business partners. These aggregated user statistics may be shared so that our current and prospective business partners understand our services. We may also share this data with third parties for lawful purposes.`,
       },
     ],
   },
   {
     id: 7,
-    title: "Limitation of liability",
+    title: "Cookies",
     paragraph: [
       {
         id: 1,
-        description: `To the fullest extent permitted by applicable law, in no event will Website Operator, its affiliates, officers, directors, employees, agents, suppliers or licensors be liable to any person for (a): any indirect, incidental, special, punitive, cover or consequential damages (including, without limitation, damages for lost profits, revenue, sales, goodwill, use of content, impact on business, business interruption, loss of anticipated savings, loss of business opportunity) however caused, under any theory of liability, including, without limitation, contract, tort, warranty, breach of statutory duty, negligence or otherwise, even if Website Operator has been advised as to the possibility of such damages or could have foreseen such damages. To the maximum extent permitted by applicable law, the aggregate liability of Website Operator and its affiliates, officers, employees, agents, suppliers and licensors, relating to the services will be limited to an amount greater of one dollar or any amounts actually paid in cash by you to Website Operator for the prior one month period prior to the first event or occurrence giving rise to such liability. The limitations and exclusions also apply if this remedy does not fully compensate you for any losses or fails of its essential purpose.`,
+        description: `We may use "cookies" on this Site. A cookie is a piece of information sent from our Site and stored on your computer by the user's web browser while browsing. Cookies help provide additional functionality to the Site and help us analyze Site usage more accurately.`,
       },
     ],
   },
   {
     id: 8,
-    title: "Indemnification",
+    title: "Sharing Information",
     paragraph: [
       {
         id: 1,
-        description: `You agree to indemnify and hold Website Operator and its affiliates, directors, officers, employees, and agents harmless from and against any liabilities, losses, damages or costs, including reasonable attorneys' fees, incurred in connection with or arising from any third-party allegations, claims, actions, disputes, or demands asserted against any of them as a result of or relating to your Content, your use of the Website or Services or any willful misconduct on your part.`,
+        description: `Certain circumstances may require Appigma to share your personal data with certain third parties without notice to You. This may include: Agents, Consultants and Related Third Parties: Appigma may employ other companies to perform certain business-related functions. This could include mailing information, maintaining databases and processing payments. We only provide these companies information they need to perform their specific function. Business Partners: We may aggregate your personal data along with personal data of other users. This information is used in a non-personally identifiable manner to advertisers and other third parties for marketing and promotional purposes. We will not disclose information that could be used to identify You personally to our business partners. Legal Requirements: If needed, Appigma may disclose your personal data by law or in good faith that such action is necessary to (a) comply with a legal obligation, (b) protect and defend the rights or property of Appigma, (c) act in urgent circumstances to protect the personal safety of users of the Site or the public, or (d) protect against legal liability. Business Transfers: Buying or selling businesses or assets is a part of any business, and we are no different. If we affect a corporate sale, merger, reorganization, dissolution or similar event, personal data may be part of the transferred assets.`,
       },
     ],
   },
   {
     id: 9,
-    title: "Severability",
+    title: "Minor",
     paragraph: [
       {
         id: 1,
-        description: `All rights and restrictions contained in this Agreement may be exercised and shall be applicable and binding only to the extent that they do not violate any applicable laws and are intended to be limited to the extent necessary so that they will not render this Agreement illegal, invalid or unenforceable. If any provision or portion of any provision of this Agreement shall be held to be illegal, invalid or unenforceable by a court of competent jurisdiction, it is the intention of the parties that the remaining provisions or portions thereof shall constitute their agreement with respect to the subject matter hereof, and all such remaining provisions or portions thereof shall remain in full force and effect.`,
+        description: `Appigma does not knowingly collect personal data from minors under the age of 18 through this Site. If You are under 18, please do not give us any personal data.`,
       },
     ],
   },
   {
     id: 10,
-    title: "Dispute resolution",
+    title: "Links to Other Web Sites",
     paragraph: [
       {
         id: 1,
-        description: `The formation, interpretation, and performance of this Agreement and any disputes arising out of it shall be governed by the substantive and procedural laws of California, United States without regard to its rules on conflicts or choice of law and, to the extent applicable, the laws of United States. The exclusive jurisdiction and venue for actions related to the subject matter hereof shall be the courts located in California, United States, and you hereby submit to the personal jurisdiction of such courts. You hereby waive any right to a jury trial in any proceeding arising out of or related to this Agreement. The United Nations Convention on Contracts for the International Sale of Goods does not apply to this Agreement.`,
+        description: `This Privacy Policy is only applicable to this Site and no third-party sites.`,
       },
     ],
   },
   {
     id: 11,
-    title: "Changes and amendments",
+    title: "Security",
     paragraph: [
       {
         id: 1,
-        description: `We reserve the right to modify this Agreement or its policies relating to the Website or Services at any time, effective upon posting of an updated version of this Agreement on the Website. When we do, we will send you an email to notify you. Continued use of the Website after any such changes shall constitute your consent to such changes. Policy was created with https://www.WebsitePolicies.com`,
+        description: `Appigma protects personal data provided to this Site from loss, misuse, unauthorized access, disclosure, alteration, or destruction. As the Internet is not a secure environment and no e-mail transmission is fully error free, You should be careful what information is sent to us via e-mail.`,
       },
     ],
   },
   {
     id: 12,
-    title: "Acceptance of these terms",
+    title: "Other Terms and Conditions",
     paragraph: [
       {
         id: 1,
-        description: `You acknowledge that you have read this Agreement and agree to all its terms and conditions. By using the Website or its Services you agree to be bound by this Agreement. If you do not agree to abide by the terms of this Agreement, you are not authorized to use or access the Website and its Services.`,
+        description: `Appigma reserves the right to update or modify this Privacy Policy at any time and without prior notice. We advise You to review this policy periodically, especially before providing any personal data. With your continued use of the Site or our services following any modifications or revisions of this Privacy Policy it shall be deemed that you agree with the terms of the revised Privacy Policy.`,
       },
     ],
   },
   {
     id: 13,
-    title: "Contacting us",
+    title: "Access to Information",
     paragraph: [
       {
         id: 1,
-        description: `If you would like to contact us to understand more about this Agreement or wish to contact us concerning any matter relating to it, you may send an email to info@appima.com`,
+        description: `It is our policy to keep the information provided by You in the form of personal data as accurate, current, and complete. If You find the information is inaccurate or not up to date, please contact us as specified below. We will update or correct personal data in our possession previously submitted by You on this Site.`,
+      },
+    ],
+  },
+  {
+    id: 14,
+    title: "Opt-out Policy",
+    paragraph: [
+      {
+        id: 1,
+        description: `In case, after registering, You don't want to receive any information from us or You have any questions about the use of information provided by You, please contact us as specified below.`,
+      },
+    ],
+  },
+  {
+    id: 15,
+    title: "Update your Information",
+    paragraph: [
+      {
+        id: 1,
+        description: `In case, after registering, You want to modify your personally identifiable information previously provided, please contact us as specified below. We will respond to any such update or request within thirty (30) days of receiving the same.`,
+      },
+    ],
+  },
+  {
+    id: 16,
+    title: "How to Contact Us",
+    paragraph: [
+      {
+        id: 1,
+        description: `Do Get in Touch with us if You have any questions regarding this Privacy Policy or collection of personal data from this Site. Please contact us at hello@appigma.com or call +18152379491.`,
       },
     ],
   },
