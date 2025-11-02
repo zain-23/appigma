@@ -25,15 +25,13 @@ export const Hero = ({ title, description, sideImage, bgColor }: HeroProps) => {
           </div>
           <div className="col-span-1 flex justify-center items-center">
             <div className="flex items-center w-full max-w-4xl">
-              <Image 
-                src={sideImage} 
-                alt="Banner image" 
-                className="w-full h-auto" 
+              <Image
+                src={sideImage}
+                alt="Banner image"
+                className="w-full h-auto"
                 width={1200}
                 height={900}
                 priority={true}
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>

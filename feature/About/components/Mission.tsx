@@ -57,6 +57,7 @@ export const Mission = () => {
             <Image
               src={selectedTabImage}
               alt={selected}
+              priority
               fill
               className="object-cover rounded-lg lg:rounded-none"
             />

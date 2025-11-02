@@ -62,7 +62,7 @@ export const AwardRecognization = () => {
                     className="grayscale group-hover:grayscale-0 duration-300 max-w-full h-auto"
                     width={200}
                     height={120}
-                    loading="lazy"
+                    priority
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, (max-width: 1280px) 20vw, 16vw"
                   />
                   <h4 className="text-sm md:text-base lg:text-lg xl:text-xl font-medium">
